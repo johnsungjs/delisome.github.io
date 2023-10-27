@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/delisome.github.io/static/css/main.5349b607.css",
-    "main.js": "/delisome.github.io/static/js/main.8be0824f.js",
+    "main.js": "/delisome.github.io/static/js/main.1c3479e6.js",
     "static/js/787.e77672d8.chunk.js": "/delisome.github.io/static/js/787.e77672d8.chunk.js",
     "static/media/promo-sample.jpeg": "/delisome.github.io/static/media/promo-sample.bfc02f223bf23555d515.jpeg",
     "static/media/burung.png": "/delisome.github.io/static/media/burung.8c653efab268f37fb43a.png",
     "index.html": "/delisome.github.io/index.html",
     "main.5349b607.css.map": "/delisome.github.io/static/css/main.5349b607.css.map",
-    "main.8be0824f.js.map": "/delisome.github.io/static/js/main.8be0824f.js.map",
+    "main.1c3479e6.js.map": "/delisome.github.io/static/js/main.1c3479e6.js.map",
     "787.e77672d8.chunk.js.map": "/delisome.github.io/static/js/787.e77672d8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5349b607.css",
-    "static/js/main.8be0824f.js"
+    "static/js/main.1c3479e6.js"
   ]
 }
