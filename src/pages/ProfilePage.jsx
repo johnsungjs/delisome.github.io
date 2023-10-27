@@ -1,4 +1,3 @@
-import AuthLayout from "../components/AuthLayout";
 
 export default function ProfilePage() {
   return (
