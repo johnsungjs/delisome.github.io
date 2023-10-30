@@ -1,33 +1,14 @@
-import { useEffect, useState } from "react";
+import { useRef, useState } from "react";
 import burung from "../services/dummy/assets-dummy/burung.png";
 import { Search, Menu } from "@mui/icons-material";
 import SideNavbar from "./SideNavbar";
-import { useDispatch, useSelector } from "react-redux";
-import { handleChangeSearchInput } from "../services/redux/features/search/searchSlice";
+import SearchInput from "./SearchInput";
 
 export default function TopNavbar() {
-  const dispatch = useDispatch();
-  const searchValue = useSelector((state) => state.search.value);
-
   const [showInput, setShowInput] = useState(false);
   const [showSideNavbar, setShowSideNavbar] = useState(false);
 
-  useEffect(() => {
-    const delayRebounceFn = setTimeout(() => {
-      console.log("timeout!");
-      //function search
-    }, 2000);
-
-    return () => clearTimeout(delayRebounceFn);
-  }, [searchValue]);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
-
-  const handleChange = (e) => {
-    dispatch(handleChangeSearchInput(e.target.value));
-  };
+  const inputTxt = useRef(null);
 
   return (
     <>
@@ -50,6 +31,9 @@ export default function TopNavbar() {
             className="self-end text-center"
             onClick={() => {
               setShowInput(!showInput);
+              if (!showInput) {
+                inputTxt.current.focus();
+              }
             }}
           >
             <Search fontSize="large" />
@@ -58,20 +42,11 @@ export default function TopNavbar() {
       </div>
       {/* SECTION TOP NAVBAR ENDS*/}
 
-      {/* SEARCH INPUT STARTS*/}
-      <form onSubmit={handleSubmit}>
-        <input
-          name="search-input"
-          type="text"
-          className={`w-[calc(100%-120px)] fixed mt-1 px-2 py-2 rounded-xl top-0 left-1/2 transform translate-x-[-50%] z-1 bg-white outline-none transition-all duration-500 ${
-            showInput ? "opacity-100 z-10" : "opacity-0 -z-10"
-          }`}
-          placeholder="search here..."
-          value={searchValue}
-          onChange={handleChange}
-        />
-      </form>
-      {/* SEARCH INPUT ENDS*/}
+      <SearchInput
+        showInput={showInput}
+        setShowInput={setShowInput}
+        inputTxt={inputTxt}
+      />
 
       <SideNavbar
         showSideNavbar={showSideNavbar}
