@@ -3,16 +3,17 @@ import { useDispatch, useSelector } from "react-redux";
 import { handleChangeSearchInput } from "../services/redux/features/search/searchSlice";
 
 export default function SearchInput({ showInput, setShowInput, inputTxt }) {
-
   const searchValue = useSelector((state) => state.search.value);
 
   useEffect(() => {
-    const delayRebounceFn = setTimeout(() => {
-      console.log("timeout!");
-      //function search
-    }, 2000);
+    if (searchValue.length > 0) {
+      const delayRebounceFn = setTimeout(() => {
+        console.log("timeout!");
+        //perform function search here
+      }, 2000);
 
-    return () => clearTimeout(delayRebounceFn);
+      return () => clearTimeout(delayRebounceFn);
+    }
   }, [searchValue]);
 
   const dispatch = useDispatch();
