@@ -1,6 +1,5 @@
 import { useRef, useState } from "react";
-import burung from "../services/dummy/assets-dummy/burung.png";
-import { Search, Menu } from "@mui/icons-material";
+import { Menu } from "@mui/icons-material";
 import SideNavbar from "./SideNavbar";
 import SearchInput from "./SearchInput";
 
@@ -13,21 +12,16 @@ export default function TopNavbar() {
   return (
     <>
       {/* SECTION TOP NAVBAR START*/}
-      <div className="w-full max-w-4xl h-12 fixed top-0 z-0 px-4 py-2 bg-gray-300">
+      <div className="w-full max-w-4xl h-12 fixed top-0 z-0 px-4 py-2 ">
         <div className="flex items-center">
           <button
-            className="self-start text-center"
             onClick={() => setShowSideNavbar(!showSideNavbar)}
           >
             <Menu fontSize="large" />
           </button>
-          <div className="flex-grow text-center">
-            <div className="flex items-center justify-center gap-2">
-              <img alt="delisome" src={burung} width="40" />
-              <p className="text-xl">Delisome</p>
-            </div>
-          </div>
-          <button
+          <p className="pl-2 text-xl">Delisome</p>
+
+          {/* <button
             className="self-end text-center"
             onClick={() => {
               setShowInput(!showInput);
@@ -37,7 +31,7 @@ export default function TopNavbar() {
             }}
           >
             <Search fontSize="large" />
-          </button>
+          </button> */}
         </div>
       </div>
       {/* SECTION TOP NAVBAR ENDS*/}

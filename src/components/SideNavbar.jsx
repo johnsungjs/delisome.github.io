@@ -23,7 +23,7 @@ export default function SideNavbar({ showSideNavbar, setShowSideNavbar }) {
         }`}
       >
         <div className="flex h-screen">
-          <div className="w-[80%] bg-gray-300">
+          <div className="w-[80%] bg-primary">
             <button
               className="block w-full text-right pt-2 pr-2"
               onClick={() => setShowSideNavbar(!showSideNavbar)}
