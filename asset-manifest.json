@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/delisome.github.io/static/css/main.fda989f3.css",
-    "main.js": "/delisome.github.io/static/js/main.fd09995a.js",
+    "main.css": "/delisome.github.io/static/css/main.63d872b7.css",
+    "main.js": "/delisome.github.io/static/js/main.3f4ed395.js",
     "static/js/787.e77672d8.chunk.js": "/delisome.github.io/static/js/787.e77672d8.chunk.js",
     "static/media/delisome-logo.jpeg": "/delisome.github.io/static/media/delisome-logo.cfa1d9529a7bc79e0b1e.jpeg",
     "index.html": "/delisome.github.io/index.html",
-    "main.fda989f3.css.map": "/delisome.github.io/static/css/main.fda989f3.css.map",
-    "main.fd09995a.js.map": "/delisome.github.io/static/js/main.fd09995a.js.map",
+    "main.63d872b7.css.map": "/delisome.github.io/static/css/main.63d872b7.css.map",
+    "main.3f4ed395.js.map": "/delisome.github.io/static/js/main.3f4ed395.js.map",
     "787.e77672d8.chunk.js.map": "/delisome.github.io/static/js/787.e77672d8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fda989f3.css",
-    "static/js/main.fd09995a.js"
+    "static/css/main.63d872b7.css",
+    "static/js/main.3f4ed395.js"
   ]
 }
