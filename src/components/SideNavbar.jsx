@@ -103,6 +103,9 @@ export default function SideNavbar({ showSideNavbar, setShowSideNavbar }) {
       <div
         className={`fixed left-0 z-10 w-full max-w-[calc((100%-56rem)/2)] h-full bg-white`}
       />
+      <div
+        className={`fixed right-0 z-10 w-full max-w-[calc((100%-56rem)/2)] h-full bg-white`}
+      />
     </>
   );
 }

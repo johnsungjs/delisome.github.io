@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import HomePage from './pages/HomePage';
 import { Navigate, Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import PrivateRoutes from './services/PrivateRoutes';
@@ -11,14 +10,13 @@ import TransactionPage from './pages/TransactionPage';
 import AuthLayout from './components/AuthLayout';
 import RegisterPage from './pages/RegisterPage';
 import ContactUsPage from './pages/ContactUsPage';
-import LandingPage from './pages/LandingPage';
 
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <>
         <Route path="*" element={<Page404 />} />
-        <Route path="/delisome.github.io" element={<LandingPage />} />
+        <Route path="/delisome.github.io" element={<LoginPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/" redirect element={<Navigate to="/login" />} />

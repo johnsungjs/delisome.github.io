@@ -8,8 +8,9 @@ export default function HomePage() {
 
   return (
     <>
-      <Carousel />
       <BreadCrumbs section={section} setSection={setSection} />
+      <div className="pl-4 font-bold text-xl">Popular Games</div>
+      <Carousel />
       <SectionSelector section={section} />
     </>
   );
