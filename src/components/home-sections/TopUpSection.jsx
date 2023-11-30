@@ -1,15 +1,17 @@
-import { topUpDummy } from "../../services/dummy/data-dummy/dataDummy";
-import Card from "../../components/Card";
+import Carousel from "../Carousel";
+import GamesSlider from "../GamesSlider";
 
 export default function TopUpSection() {
   return (
     <>
+      <div className="pl-4 font-bold text-xl">Popular Games</div>
+      <Carousel />
       {/* SECTION CARDS START*/}
-      <div className="flex flex-wrap justify-center gap-1 pt-4 pb-4">
-        {topUpDummy.map((e, index) => (
-          <Card key={index} title={e.title} />
-        ))}
+      <div className="px-4 pb-2 flex justify-between items-center">
+        <p className="font-bold text-lg">Recently Viewed</p>
+        <button className="px-4 py-2 bg-transparent border border-tertiary text-sm text-purple-200 rounded-xl">See More</button>
       </div>
+      <GamesSlider />
       {/* SECTION CARDS END*/}
     </>
   );

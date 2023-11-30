@@ -18,8 +18,8 @@ export default function SideNavbar({ showSideNavbar, setShowSideNavbar }) {
       <div
         className={`w-full h-full max-w-4xl fixed top-12 transition-all duration-500 ${
           showSideNavbar
-            ? "opacity-100 z-10"
-            : "opacity-0 -z-10 -translate-x-full"
+            ? "opacity-100 z-20"
+            : "opacity-0 -z-20 -translate-x-full"
         }`}
       >
         <div className="flex h-screen">
@@ -101,10 +101,10 @@ export default function SideNavbar({ showSideNavbar, setShowSideNavbar }) {
 
       {/* MAKE SIDENAV TRANSITION SMOOTHER WITH THIS DIV */}
       <div
-        className={`fixed left-0 z-10 w-full max-w-[calc((100%-56rem)/2)] h-full bg-white`}
+        className={`fixed left-0 z-20 w-full max-w-[calc((100%-56rem)/2)] h-full bg-white`}
       />
       <div
-        className={`fixed right-0 z-10 w-full max-w-[calc((100%-56rem)/2)] h-full bg-white`}
+        className={`fixed right-0 z-20 w-full max-w-[calc((100%-56rem)/2)] h-full bg-white`}
       />
     </>
   );

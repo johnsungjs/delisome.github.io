@@ -30,6 +30,7 @@ export default function SearchInput({ showInput, setShowInput, inputTxt }) {
       {/* SEARCH INPUT STARTS*/}
       <form onSubmit={handleSubmit}>
         <input
+          id="search"
           ref={inputTxt}
           name="search-input"
           type="text"

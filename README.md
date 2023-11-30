@@ -18,3 +18,27 @@ Push the React app to the GitHub repository
 $ npm run deploy
 for custom message:
 $ npm run deploy -- -m "Deploy React app to GitHub Pages"
+
+
+
+ASSETS:
+Fortnite
+https://wallpapers.com/fortnite-1920x1080-hd
+
+Mobile Legends
+https://wallpapers.com/mobile-legends
+
+PUBG
+https://wall.alphacoders.com/big.php?i=854917
+
+Icon
+https://feathericons.com/
+
+banner gopay
+https://gopay.co.id/promo/oneklik
+
+Kang Ha Na
+https://www.imdb.com/name/nm6019624/
+
+Halaman depan
+https://unsplash.com/photos/person-sitting-on-gaming-chair-while-playing-video-game-Mf23RF8xArY

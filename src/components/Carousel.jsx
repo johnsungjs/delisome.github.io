@@ -13,7 +13,7 @@ export default function Carousel() {
   return (
     <>
       {/* SECTION CAROUSEL START*/}
-      <div className="pt-2 pb-8 px-0">
+      <div className="pt-2 pb-2 px-0">
         <Swiper
           effect={"coverflow"}
           grabCursor={true}
@@ -32,12 +32,19 @@ export default function Carousel() {
           {carouselData.map((data, index) => (
             <SwiperSlide key={index} className="rounded-2xl">
               <div className="carousel">
-                <img width={'100%'} src={data.image} alt="yes" className="rounded-2xl object-cover mx-auto max-h-[140px]" />
+                <img
+                  width={"100%"}
+                  src={data.image}
+                  alt="yes"
+                  className="rounded-2xl object-cover mx-auto max-h-[140px]"
+                />
                 <div className="absolute top-24 left-10">
-                  <p className="text-red-300">Action</p>
-                  <p className="text-white text-xl font-bold">Mobile Legends</p>
+                  <p className="text-red-300">{data.genre.toUpperCase()}</p>
+                  <p className="text-white text-xl font-bold">{data.title}</p>
                 </div>
-                <p className="px-6 pt-4 pb-4 text-xs">{data.info}</p>
+                <p className="px-6 pt-4 pb-4 text-[10px] break-words">
+                  {data.info}
+                </p>
               </div>
             </SwiperSlide>
           ))}

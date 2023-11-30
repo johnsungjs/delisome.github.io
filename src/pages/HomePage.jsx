@@ -1,16 +1,15 @@
 import { useState } from "react";
-import Carousel from "../components/Carousel";
 import BreadCrumbs from "../components/BreadCrumbs";
 import SectionSelector from "../components/home-sections/SectionSelector";
+import SearchField from "../components/SearchField";
 
 export default function HomePage() {
   const [section, setSection] = useState(0);
 
   return (
     <>
+      <SearchField />
       <BreadCrumbs section={section} setSection={setSection} />
-      <div className="pl-4 font-bold text-xl">Popular Games</div>
-      <Carousel />
       <SectionSelector section={section} />
     </>
   );

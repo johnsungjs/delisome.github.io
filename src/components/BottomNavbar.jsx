@@ -8,12 +8,12 @@ export default function BottomNavbar() {
   return (
     <>
       {/* SECTION BOTTOM NAVBAR */}
-      <div className="w-full mx-auto max-w-4xl fixed bottom-0 px-4 py-2 bg-gray-300">
+      <div className="z-10 w-full mx-auto max-w-4xl fixed bottom-0 px-4 py-2 bg-primary">
         <div className="flex">
           <button
             onClick={() => navigate("/home")}
-            className={`flex-grow text-center hover:bg-gray-400 ${
-              location.pathname === "/home" ? "bg-gray-400" : ""
+            className={`flex-grow text-center ${
+              location.pathname === "/home" ? "text-white text-lg" : "text-slate-400"
             }`}
           >
             <Home fontSize="large" />
@@ -21,8 +21,8 @@ export default function BottomNavbar() {
           </button>
           <button
             onClick={() => navigate("/history")}
-            className={`flex-grow text-center hover:bg-gray-400 ${
-              location.pathname === "/history" ? "bg-gray-400" : ""
+            className={`flex-grow text-center ${
+              location.pathname === "/history" ? "text-white text-lg" : "text-slate-400"
             }`}
           >
             <History fontSize="large" />
@@ -30,8 +30,8 @@ export default function BottomNavbar() {
           </button>
           <button
             onClick={() => navigate("/profile")}
-            className={`flex-grow text-center hover:bg-gray-400 ${
-              location.pathname === "/profile" ? "bg-gray-400" : ""
+            className={`flex-grow text-center ${
+              location.pathname === "/profile" ? "text-white text-lg" : "text-slate-400"
             }`}
           >
             <Person fontSize="large" />
