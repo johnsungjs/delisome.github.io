@@ -42,7 +42,7 @@ export default function Carousel() {
                   <p className="text-red-300">{data.genre.toUpperCase()}</p>
                   <p className="text-white text-xl font-bold">{data.title}</p>
                 </div>
-                <p className="px-6 pt-4 pb-4 text-[10px] break-words">
+                <p className="px-6 pt-4 pb-4 text-[10px] md:text-base break-words">
                   {data.info}
                 </p>
               </div>

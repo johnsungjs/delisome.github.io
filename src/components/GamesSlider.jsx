@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 
-import { EffectCoverflow } from "swiper/modules";
+import { Virtual } from "swiper/modules";
 
 import {
   dummyListGames,
@@ -17,23 +17,15 @@ export default function GamesSlider() {
       {/* SECTION GAMES SLIDER START*/}
       <div className="pt-2 pb-8 px-0">
         <Swiper
-          effect={"coverflow"}
-          grabCursor={true}
+          modules={[Virtual]}
+          slidesPerView={2.5}
+          spaceBetween={10}
           centeredSlides={true}
           loop={true}
-          slidesPerView={2.5}
-          coverflowEffect={{
-            rotate: 0,
-            stretch: 0,
-            depth: 100,
-            modifier: 0,
-            slideShadows: true,
-          }}
-          modules={[EffectCoverflow]}
         >
           {gamesData.map((data, index) => (
             <SwiperSlide key={index} className="rounded-2xl">
-              <div className="w-36 h-40 px-1">
+              <div className="w-full h-40 px-1">
                 <img
                   src={data.image}
                   alt="yes"
