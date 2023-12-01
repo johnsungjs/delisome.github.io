@@ -51,8 +51,10 @@ export default function SideNavbar({ showSideNavbar, setShowSideNavbar }) {
             {/* BUTTON ITEMS SIDEBAR STARTS */}
             <div className=" bg-[#2E3241] h-full pt-16 rounded-tr-[40px]">
               <div
-                className={`pl-4 py-1 flex items-center gap-2 cursor-pointer hover:bg-gray-400 ${
-                  location.pathname === "/home" ? "font-bold text-purple-400" : ""
+                className={`pl-8 py-1 flex items-center gap-2 cursor-pointer hover:bg-gray-400 ${
+                  location.pathname === "/home"
+                    ? "font-bold text-white"
+                    : "text-slate-400"
                 }`}
                 onClick={() => {
                   navigate("/home");
@@ -60,11 +62,13 @@ export default function SideNavbar({ showSideNavbar, setShowSideNavbar }) {
                 }}
               >
                 <Home fontSize="large" />
-                <p className="text-xl">Home</p>
+                <p className="text-lg">Home</p>
               </div>
               <div
-                className={`pl-4 py-1 flex items-center gap-2 cursor-pointer hover:bg-gray-400 ${
-                  location.pathname === "/transaction" ? "font-bold text-purple-400" : ""
+                className={`pl-8 py-1 flex items-center gap-2 cursor-pointer hover:bg-gray-400 ${
+                  location.pathname === "/transaction"
+                    ? "font-bold text-white"
+                    : "text-slate-400"
                 }`}
                 onClick={() => {
                   navigate("/transaction");
@@ -72,11 +76,13 @@ export default function SideNavbar({ showSideNavbar, setShowSideNavbar }) {
                 }}
               >
                 <List fontSize="large" />
-                <p className="text-xl">Transaksi</p>
+                <p className="text-lg">Transaksi</p>
               </div>
               <div
-                className={`pl-4 py-1 flex items-center gap-2 cursor-pointer hover:bg-gray-400 ${
-                  location.pathname === "/register" ? "font-bold text-purple-400" : ""
+                className={`pl-8 py-1 flex items-center gap-2 cursor-pointer hover:bg-gray-400 ${
+                  location.pathname === "/register"
+                    ? "font-bold text-white"
+                    : "text-slate-400"
                 }`}
                 onClick={() => {
                   navigate("/register");
@@ -84,11 +90,13 @@ export default function SideNavbar({ showSideNavbar, setShowSideNavbar }) {
                 }}
               >
                 <BallotSharp fontSize="large" />
-                <p className="text-xl">Register</p>
+                <p className="text-lg">Register</p>
               </div>
               <div
-                className={`pl-4 py-1 flex items-center gap-2 cursor-pointer hover:bg-gray-400 ${
-                  location.pathname === "/contact-us" ? "font-bold text-purple-400" : ""
+                className={`pl-8 py-1 flex items-center gap-2 cursor-pointer hover:bg-gray-400 ${
+                  location.pathname === "/contact-us"
+                    ? "font-bold text-white"
+                    : "text-slate-400"
                 }`}
                 onClick={() => {
                   navigate("/contact-us");
@@ -96,11 +104,13 @@ export default function SideNavbar({ showSideNavbar, setShowSideNavbar }) {
                 }}
               >
                 <Headphones fontSize="large" />
-                <p className="text-xl">Contact Us</p>
+                <p className="text-lg">Contact Us</p>
               </div>
               <div
-                className={`pl-4 py-1 flex items-center gap-2 cursor-pointer hover:bg-gray-400 ${
-                  location.pathname === "/login" ? "font-bold text-purple-400" : ""
+                className={`absolute bottom-10 pl-8 py-1 flex items-center gap-2 cursor-pointer hover:bg-gray-400 ${
+                  location.pathname === "/login"
+                    ? "font-bold text-white"
+                    : "text-slate-400"
                 }`}
                 onClick={() => {
                   navigate("/login");
@@ -108,7 +118,7 @@ export default function SideNavbar({ showSideNavbar, setShowSideNavbar }) {
                 }}
               >
                 <Logout fontSize="large" />
-                <p className="text-xl">Logout</p>
+                <p className="text-lg">Logout</p>
               </div>
             </div>
             {/* BUTTON ITEMS SIDEBAR ENDS */}
