@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import InputPassword from "../components/InputPassword";
-import logo from "../assets/delisome-logo.jpeg"
+import logo from "../assets/delisome-logo.jpeg";
+import { Email } from "@mui/icons-material";
 
 export default function LoginPage() {
   const navigate = useNavigate();
@@ -14,33 +15,42 @@ export default function LoginPage() {
   return (
     <>
       <div className="w-full h-full min-h-screen bg-primary">
-        <div className="pt-16 pb-4 px-8 sm:px-32 max-w-2xl mx-auto text-left text-2xl sm:text-4xl font-semibold">
-          WELCOME TO DELISOME STORE
+        <img
+          className="mt-20 mx-auto rounded-full"
+          alt="delisome-logo"
+          src={logo}
+          width={"60px"}
+        />
+
+        <div className="pt-2 text-center">
+          <p className="text-2xl sm:text-4xl font-semibold">Login</p>
+          <p className="pt-2 text-sm sm:text-xl">
+            Silahkan Masukkan Id dan Password anda
+          </p>
         </div>
-        <img className="mx-auto rounded-full" alt="delisome-logo" src={logo} width={"80px"}/>
         <form onSubmit={handleSubmit}>
           <div className="px-8 sm:px-32 max-w-2xl mx-auto">
-            <label className="block py-2 font-semibold" htmlFor="username">
-              Username
-            </label>
-            <input
-              type="text"
-              className="block w-full px-4 py-2 rounded-lg shadow-xl outline-none text-black"
-              id="username"
-              autoComplete="on"
-              placeholder="silahkan masukkan username"
-            />
-            <label className="block py-2 font-semibold" htmlFor="password">
-              <p>Password</p>
-            </label>
-            <InputPassword />
-            <button className="w-full mt-8 px-4 py-2 rounded-xl bg-tertiary shadow-xl hover:opacity-80 text-white font-semibold">
-              Sign In
+            <div className="flex pt-20 items-center">
+              <Email />
+              <input
+                type="text"
+                className="border-b-2 ml-4 w-full px-4 py-2 bg-transparent outline-none text-white"
+                id="username"
+                autoComplete="on"
+                placeholder="silahkan masukkan email"
+              />
+            </div>
+            <div className="flex pt-8 items-center">
+              <div className="w-[24px] p-2" />
+              <InputPassword />
+            </div>
+            <button className="block mt-12 mx-auto px-12 py-1 rounded-full bg-tertiary hover:opacity-80 text-white font-semibold">
+              LOG IN
             </button>
-            <div className="py-2 flex justify-center">
-              <p className="pr-2">belum punya akun?</p>
+            <div className="pt-8 pb-8 flex justify-center">
+              <p className="pr-2 text-sm">belum punya akun?</p>
               <p
-                className="underline cursor-pointer text-tertiary font-bold"
+                className="underline text-sm cursor-pointer text-tertiary font-bold"
                 onClick={() => navigate("/register")}
               >
                 daftar disini

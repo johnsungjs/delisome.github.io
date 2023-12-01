@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { RemoveRedEye } from "@mui/icons-material";
+import { RemoveRedEye, VisibilityOff } from "@mui/icons-material";
 
 export default function InputPassword() {
   const [showPassword, setShowPassword] = useState(false);
@@ -9,16 +9,16 @@ export default function InputPassword() {
       <label className="block" htmlFor="password">
         <div className="relative">
           <i
-            className="absolute top-[6px] right-2 text-black"
+            className="absolute top-[-16px] right-0 text-white"
             onClick={() => setShowPassword(!showPassword)}
           >
-            <RemoveRedEye />
+            {showPassword ? <RemoveRedEye /> : <VisibilityOff />}
           </i>
         </div>
       </label>
       <input
         type={showPassword ? "text" : "password"}
-        className="block w-full px-4 py-2 rounded-lg shadow-xl outline-none text-black"
+        className="border-b-2 ml-4 w-full px-4 py-2 bg-transparent outline-none text-white"
         id="password"
         autoComplete="on"
         placeholder="silahkan masukkan password"
