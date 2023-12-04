@@ -18,7 +18,7 @@ export default function SideNavbar({ showSideNavbar, setShowSideNavbar }) {
       {/* SIDE NAVBAR STARTS*/}
 
       <div
-        className={`absolute w-full h-full max-w-4xl bg-[#2E3241] ${
+        className={`absolute w-full h-full max-w-4xl bg-abuMuda ${
           showSideNavbar ? "opacity-50 z-40 delay-150" : "opacity-0 -z-30"
         }`}
       />
@@ -49,7 +49,7 @@ export default function SideNavbar({ showSideNavbar, setShowSideNavbar }) {
             {/* PROFILE SIDEBAR ENDS */}
 
             {/* BUTTON ITEMS SIDEBAR STARTS */}
-            <div className=" bg-[#2E3241] h-full pt-16 rounded-tr-[40px]">
+            <div className=" bg-abuMuda h-full pt-16 rounded-tr-[40px]">
               <div
                 className={`pl-8 py-1 flex items-center gap-2 cursor-pointer hover:bg-gray-400 ${
                   location.pathname === "/home"

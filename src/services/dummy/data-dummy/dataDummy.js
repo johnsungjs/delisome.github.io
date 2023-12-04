@@ -138,4 +138,24 @@ export const dummyListGames = [
     discount: 20,
     image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
   },
+  {
+    title: "Mobile Legends",
+    discount: 20,
+    image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
+  },
+  {
+    title: "Mobile Legends",
+    discount: 20,
+    image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
+  },
+  {
+    title: "Mobile Legends",
+    discount: 20,
+    image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
+  },
+  {
+    title: "Mobile Legends",
+    discount: 20,
+    image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
+  },
 ];

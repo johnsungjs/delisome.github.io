@@ -1,18 +1,26 @@
-import Carousel from "../Carousel";
-import GamesSlider from "../GamesSlider";
+import { dummyListGames } from "../../services/dummy/data-dummy/dataDummy";
+
+const games = dummyListGames;
 
 export default function TopUpSection() {
   return (
     <>
-      <div className="pl-4 font-bold text-xl">Popular Games</div>
-      <Carousel />
-      {/* SECTION CARDS START*/}
-      <div className="px-4 pb-2 flex justify-between items-center">
-        <p className="font-bold text-lg">Recently Viewed</p>
-        <button className="px-4 py-2 bg-transparent border border-tertiary text-sm text-purple-200 rounded-xl">See More</button>
+      <div className="pl-4 pt-2 pb-2 font-bold text-xl">Top Up Games</div>
+      {/* SECTION GRID GAMES START*/}
+      <div className="flex flex-wrap justify-center gap-2">
+        {games.map((e, index) => (
+          <div key={index} className="w-[calc((100%/3)-25px)]">
+            <img
+              alt={index}
+              src={e.image}
+              className="w-full h-[105px] rounded-2xl object-cover"
+            />
+            <p className="pt-1 text-sm text-center font-bold">{e.title}</p>
+          </div>
+        ))}
       </div>
-      <GamesSlider />
-      {/* SECTION CARDS END*/}
+
+      {/* SECTION GRID GAMES END*/}
     </>
   );
 }
