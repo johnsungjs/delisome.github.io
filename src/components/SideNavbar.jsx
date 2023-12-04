@@ -18,7 +18,7 @@ export default function SideNavbar({ showSideNavbar, setShowSideNavbar }) {
       {/* SIDE NAVBAR STARTS*/}
 
       <div
-        className={`absolute w-full h-full bg-[#2E3241] ${
+        className={`absolute w-full h-full max-w-4xl bg-[#2E3241] ${
           showSideNavbar ? "opacity-50 z-40 delay-150" : "opacity-0 -z-30"
         }`}
       />
@@ -124,7 +124,7 @@ export default function SideNavbar({ showSideNavbar, setShowSideNavbar }) {
             {/* BUTTON ITEMS SIDEBAR ENDS */}
           </div>
           <div
-            className="w-[20%] bg-transparent"
+            className="w-[20%] bg-transparent cursor-pointer"
             onClick={() => setShowSideNavbar(false)}
           ></div>
         </div>
@@ -133,10 +133,10 @@ export default function SideNavbar({ showSideNavbar, setShowSideNavbar }) {
 
       {/* MAKE SIDENAV TRANSITION SMOOTHER WITH THIS DIV */}
       <div
-        className={`fixed left-0 z-20 w-full max-w-[calc((100%-56rem)/2)] h-full bg-white`}
+        className={`fixed left-0 z-50 w-full max-w-[calc((100%-56rem)/2)] h-full bg-white`}
       />
       <div
-        className={`fixed right-0 z-20 w-full max-w-[calc((100%-56rem)/2)] h-full bg-white`}
+        className={`fixed right-0 z-50 w-full max-w-[calc((100%-56rem)/2)] h-full bg-white`}
       />
     </>
   );

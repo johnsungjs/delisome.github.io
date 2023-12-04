@@ -5,9 +5,7 @@ import "swiper/css/effect-coverflow";
 
 import { Virtual } from "swiper/modules";
 
-import {
-  dummyListGames,
-} from "../services/dummy/data-dummy/dataDummy";
+import { dummyListGames } from "../services/dummy/data-dummy/dataDummy";
 
 const gamesData = dummyListGames;
 
@@ -18,6 +16,7 @@ export default function GamesSlider() {
       <div className="pt-2 pb-8 px-0">
         <Swiper
           modules={[Virtual]}
+          grabCursor={true}
           slidesPerView={2.5}
           spaceBetween={10}
           centeredSlides={true}
