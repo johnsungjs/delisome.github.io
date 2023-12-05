@@ -13,7 +13,7 @@ export default function BottomNavbar() {
           <button
             onClick={() => navigate("/home")}
             className={`flex-grow text-center ${
-              location.pathname === "/home" ? "text-white text-lg" : "text-slate-400"
+              location.pathname === "/home" ? "text-unguMuda text-lg" : "text-slate-400"
             }`}
           >
             <Home fontSize="large" />
@@ -22,7 +22,7 @@ export default function BottomNavbar() {
           <button
             onClick={() => navigate("/history")}
             className={`flex-grow text-center ${
-              location.pathname === "/history" ? "text-white text-lg" : "text-slate-400"
+              location.pathname === "/history" ? "text-unguMuda text-lg" : "text-slate-400"
             }`}
           >
             <History fontSize="large" />
@@ -31,7 +31,7 @@ export default function BottomNavbar() {
           <button
             onClick={() => navigate("/profile")}
             className={`flex-grow text-center ${
-              location.pathname === "/profile" ? "text-white text-lg" : "text-slate-400"
+              location.pathname === "/profile" ? "text-unguMuda text-lg" : "text-slate-400"
             }`}
           >
             <Person fontSize="large" />

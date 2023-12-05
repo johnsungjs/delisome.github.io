@@ -1,29 +1,21 @@
-import { useDispatch, useSelector } from "react-redux";
-import { decrement, increment } from "../../services/redux/features/counter/counterSlice";
+// import { useDispatch, useSelector } from "react-redux";
+// import {
+//   decrement,
+//   increment,
+// } from "../../services/redux/features/counter/counterSlice";
+import GridItems from "../GridItems";
+import { dummyListGames } from "../../services/dummy/data-dummy/dataDummy";
+
+const vouchers = dummyListGames;
 
 export default function VoucherSection() {
-  const count = useSelector((state) => state.counter.value);
-  const dispatch = useDispatch();
+  // const count = useSelector((state) => state.counter.value);
+  // const dispatch = useDispatch();
 
   return (
     <>
-      <div>this is voucher</div>
-      <div>
-        <p>belajar redux</p>
-        <button
-          className="px-4 py-2 rounded-xl bg-purple-600 text-white"
-          onClick={() => dispatch(increment())}
-        >
-          plus
-        </button>
-        <div className="text-2xl">{count}</div>
-        <button
-          className="px-4 py-2 rounded-xl bg-purple-600 text-white"
-          onClick={() => dispatch(decrement())}
-        >
-          minus
-        </button>
-      </div>
+      <div className="pl-4 pt-2 pb-2 font-bold text-xl">Hot Deals</div>
+      <GridItems items={vouchers} />
     </>
   );
 }
