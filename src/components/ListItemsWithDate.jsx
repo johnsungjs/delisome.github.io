@@ -14,6 +14,7 @@ export default function ListItemsWithDate({ items }) {
                 <div className="flex justify-between">
                   <div className="flex justify-start leading-none">
                     <img
+                      alt={data.title}
                       src={data.image}
                       className="w-[90px] h-[90px] rounded-l-xl object-cover"
                     />
@@ -26,7 +27,9 @@ export default function ListItemsWithDate({ items }) {
                     </div>
                   </div>
                   <div className="relative pr-4">
-                    <div className="pt-6 text-tertiary font-bold">{data.price}</div>
+                    <div className="pt-6 text-tertiary font-bold">
+                      {data.price}
+                    </div>
                     <div
                       className={`absolute bottom-2 right-4 text-sm font-bold line-clamp-1 ${
                         data.status === "Success"

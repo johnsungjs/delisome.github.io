@@ -10,6 +10,7 @@ import TransactionPage from './pages/TransactionPage';
 import AuthLayout from './components/AuthLayout';
 import RegisterPage from './pages/RegisterPage';
 import ContactUsPage from './pages/ContactUsPage';
+import ProfileEditPage from './pages/ProfileEditPage';
 
 function App() {
   const router = createBrowserRouter(
@@ -28,6 +29,7 @@ function App() {
             <Route path='/transaction' element={<TransactionPage />} />
             <Route path='/contact-us' element={<ContactUsPage />} />
           </Route>
+          <Route path='/profile-edit' element={<ProfileEditPage />} />
         </Route>
       </>
     )
