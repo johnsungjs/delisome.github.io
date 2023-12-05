@@ -15,6 +15,7 @@ export default function SearchField() {
       <div className="px-4 pt-4 pb-4 flex items-center">
         <Search />
         <input
+          id="search"
           type="text"
           className="ml-2 w-full px-4 py-2 rounded-full text-black outline-none"
           placeholder="Cari game disini"

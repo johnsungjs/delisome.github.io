@@ -14,7 +14,7 @@ export default function LoginPage() {
 
   return (
     <>
-      <div className="w-full h-full min-h-screen bg-primary">
+      <div className="w-full h-full bg-primary">
         <img
           className="mt-20 mx-auto rounded-full"
           alt="delisome-logo"
