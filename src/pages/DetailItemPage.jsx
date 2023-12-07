@@ -1,26 +1,18 @@
-import { ArrowBack, Diamond, Wallet } from "@mui/icons-material";
-import { IconButton } from "@mui/material";
+import { Diamond, Wallet } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
+import Header from "../components/Header";
 
 export default function DetailItemPage() {
   const navigate = useNavigate();
   return (
     <>
       {/* NAVIGATION STARTS */}
-      <div className="relative">
-        <div className="pt-8 pl-4 text-xl flex items-center text-unguMuda">
-          <IconButton className="!text-unguMuda" onClick={() => navigate(-1)}>
-            <ArrowBack />
-          </IconButton>
-          <p className="inline pl-2 font-bold">Mobile Legends</p>
-        </div>
-        {/* NAVIGATION ENDS */}
-        <img
-          alt="game"
-          src="https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true"
-          className="absolute top-6 -z-10 opacity-30"
-        />
-      </div>
+      <Header text={"Mobile Legends"} textColor={"unguMuda"} />
+      <img
+        alt="game"
+        src="https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true"
+        className="absolute top-6 -z-10 opacity-30"
+      />
       {/* FORM STARTS */}
       <div className="pt-36">
         <form className="px-6 pb-10">

@@ -28,8 +28,8 @@ function App() {
             <Route path='/history' element={<HistoryPage />} />
             <Route path='/profile' element={<ProfilePage />} />
             <Route path='/transaction' element={<TransactionPage />} />
-            <Route path='/contact-us' element={<ContactUsPage />} />
           </Route>
+          <Route path='/contact-us' element={<ContactUsPage />} />
           <Route path='/profile-edit' element={<ProfileEditPage />} />
           <Route path='/detail-item' element={<DetailItemPage />} />
         </Route>

@@ -1,19 +1,11 @@
-import { ArrowBack, Save } from "@mui/icons-material";
-import { Avatar, IconButton } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import { Save } from "@mui/icons-material";
+import { Avatar } from "@mui/material";
+import Header from "../components/Header";
 
 export default function ProfileEditPage() {
-  const navigate = useNavigate();
   return (
     <>
-      {/* NAVIGATION STARTS */}
-      <div className="pt-8 pl-4 text-xl flex items-center">
-        <IconButton className="!text-white" onClick={() => navigate(-1)}>
-          <ArrowBack />
-        </IconButton>
-        <p className="inline pl-2 font-bold">Edit Profile</p>
-      </div>
-      {/* NAVIGATION ENDS */}
+      <Header text={"Edit Profile"} />
       <Avatar sx={{ width: 80, height: 80, marginX: "auto", mt: 4 }} />
 
       <div className="px-6 pt-4 text-white">
