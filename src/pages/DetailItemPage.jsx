@@ -1,9 +1,7 @@
 import { Diamond, Wallet } from "@mui/icons-material";
-import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 
 export default function DetailItemPage() {
-  const navigate = useNavigate();
   return (
     <>
       {/* NAVIGATION STARTS */}
