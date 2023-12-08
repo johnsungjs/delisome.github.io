@@ -1,18 +1,22 @@
 import { Close } from "@mui/icons-material";
 
+// source: https://dev.to/franciscomendes10866/how-to-create-a-modal-in-react-3coc
+// to make modal on top of everything, set z-[999] and z-[999]
+// to make modal on top of existing layout, set z-0 and z-0
+
 export default function PlainModal({ setIsOpen }) {
   return (
     <>
       {/* DARK BG STARTS */}
       <div
-        className="absolute bg-black opacity-20 w-screen h-screen z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        className="absolute z-0 bg-black opacity-20 w-screen h-screen top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
         onClick={() => setIsOpen(false)}
       />
       {/* DARK BG ENDS */}
 
       {/* MAIN MODAL STARTS */}
-      <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black">
-        <div className="w-[250px] h-[170px] bg-white z-10 rounded-2xl shadow-xl">
+      <div className="fixed z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black">
+        <div className="w-[250px] h-[170px] bg-white rounded-2xl shadow-xl">
           <div className="h-[50px] bg-white overflow-hidden rounded-t-2xl">
             <h1 className="m-0 p-[10px] font-semibold text-lg text-center">
               heading

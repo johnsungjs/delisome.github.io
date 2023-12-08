@@ -10,7 +10,7 @@ export default function Header({ text, textColor }) {
       {/* NAVIGATION STARTS */}
       <div className={`pt-8 pl-4 text-xl flex items-center text-${textColor}`}>
         <IconButton
-          className={`!text-${textColor}`}
+          className={`!text-white`}
           onClick={() => navigate(-1)}
         >
           <ArrowBack />

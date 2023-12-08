@@ -233,3 +233,84 @@ export const dummyHistory = [
     ]
   }
 ];
+
+export const dummyPaymentMethod = [
+  {
+    name: "Deli-Wallet",
+    image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+    children: []
+  },
+  {
+    name: "Dana",
+    image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+    children: []
+  },
+  {
+    name: "OVO",
+    image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+    children: []
+  },
+  {
+    name: "Shopee Pay",
+    image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+    children: []
+  },
+  {
+    name: "Gopay",
+    image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+    children: []
+  },
+  {
+    name: "Virtual Account",
+    image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+    children: [
+      { name: "VA BCA", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+      { name: "Mandiri", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+      { name: "BRI", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+      { name: "BNI", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+      { name: "Permata", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+      { name: "CIMB", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+      { name: "Danamon", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+      { name: "VA Neo Commerce", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+      { name: "BSI", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+      { name: "BJB", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" }
+    ]
+  },
+  {
+    name: "Bank Transfer",
+    image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+    children: [{ name: "Bank Transfer BCA", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+    { name: "Mandiri", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+    { name: "BRI", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+    { name: "BNI", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+    { name: "Permata", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+    { name: "CIMB", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+    { name: "Danamon", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+    { name: "VA Neo Commerce", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+    { name: "BSI", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+    { name: "BJB", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" }]
+  },
+  {
+    name: "Kartu Kredit",
+    image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+    children: [{ name: "CC BCA", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+    { name: "Mandiri", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+    { name: "BRI", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+    { name: "BNI", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+    { name: "Permata", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+    { name: "CIMB", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+    { name: "Danamon", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+    { name: "VA Neo Commerce", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+    { name: "BSI", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+    { name: "BJB", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" }]
+  },
+  {
+    name: "Gerai",
+    image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+    children: [
+      { name: "Indomaret", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
+      { name: "Alfamart", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" }
+    ]
+  },
+
+];
