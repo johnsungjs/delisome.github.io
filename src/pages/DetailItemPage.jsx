@@ -8,7 +8,9 @@ import {
   setServer,
   setWhatsAppNumber,
   setPromoCode,
+  setFormCheckoutValueToInitialState,
 } from "../services/redux/features/form/formCheckoutSlice";
+import ModalItemBuy from "../components/modal/ModalItemBuy";
 
 export default function DetailItemPage() {
   const dispatch = useDispatch();
@@ -16,19 +18,18 @@ export default function DetailItemPage() {
     (state) => state.formCheckout.formCheckoutValue
   );
 
-  console.log("formCheckoutValue", formCheckoutValue);
-
   const [showModal, setShowModal] = useState({
-    items: false,
+    itemBuy: false,
     paymentMethod: false,
   });
 
-  // const setShowModalItems = (isShow) => {
-  //   setShowModal((prev) => ({
-  //     ...prev,
-  //     items: isShow,
-  //   }));
-  // };
+  const setShowModalItemBuy = (isShow) => {
+    setShowModal((prev) => ({
+      ...prev,
+      itemBuy: isShow,
+    }));
+  };
+
   const setShowModalPaymentMethod = (isShow) => {
     setShowModal((prev) => ({
       ...prev,
@@ -38,6 +39,7 @@ export default function DetailItemPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    dispatch(setFormCheckoutValueToInitialState());
     console.log("ini data form", formCheckoutValue);
   };
 
@@ -87,15 +89,16 @@ export default function DetailItemPage() {
             <p className="pl-2 font-bold">Pilih Nominal Diamond</p>
           </div>
           <div className="flex pt-4 gap-1">
-            <div className="w-full flex px-2 items-center border border-white rounded-lg">
+            <div
+              className="w-full flex px-2 items-center border border-white rounded-lg"
+              onClick={() => setShowModalItemBuy(true)}
+            >
               <Diamond />
-              <input
-                type="number"
-                name="diamond"
-                placeholder="... Diamond"
-                className="w-auto px-2 py-2 bg-transparent outline-none"
-              />
-              <p className="ml-auto">Rp.0</p>
+              <p className="w-auto px-2 py-2 bg-transparent outline-none opacity-70">
+                {formCheckoutValue.itemBuy.type} -{" "}
+                {formCheckoutValue.itemBuy.quantity}
+              </p>
+              <p className="ml-auto">Rp.{formCheckoutValue.itemBuy.nominal}</p>
             </div>
           </div>
           {/* SECTION SECOND ENDS */}
@@ -169,6 +172,7 @@ export default function DetailItemPage() {
       {showModal.paymentMethod && (
         <ModalPaymentMethod setIsOpen={setShowModalPaymentMethod} />
       )}
+      {showModal.itemBuy && <ModalItemBuy setIsOpen={setShowModalItemBuy} />}
     </>
   );
 }

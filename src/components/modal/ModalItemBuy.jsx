@@ -13,7 +13,7 @@ import {
 // to make modal on top of everything, set z-[999] and z-[999]
 // to make modal on top of existing layout, set z-0 and z-0
 
-export default function ModalPaymentMethod({ setIsOpen }) {
+export default function ModalItemBuy({ setIsOpen }) {
   const dispatch = useDispatch();
 
   const [showDetailModal, setShowDetailModal] = useState(false);
@@ -39,7 +39,7 @@ export default function ModalPaymentMethod({ setIsOpen }) {
           }`}
         >
           <div className="flex items-center justify-between px-4 py-4 bg-white overflow-hidden rounded-t-2xl font-semibold border-b-2">
-            <h1 className="text-lg text-start">Pilih Metode Bayar</h1>
+            <h1 className="text-lg text-start">Pilih Items</h1>
             <button
               className="cursor-pointer text-black"
               onClick={() => {

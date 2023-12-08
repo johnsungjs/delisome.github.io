@@ -6,7 +6,8 @@ const initialState = {
     server: "",
     itemBuy: {
       type: "",
-      nominal: 0
+      nominal: 0,
+      quantity: 0
     },
     whatsAppNumber: "081211899299",
     payment: {
@@ -43,34 +44,23 @@ export const formCheckoutSlice = createSlice({
     setPaymentNominal: (state, action) => {
       state.formCheckoutValue.payment.nominal = action.payload;
     },
+    resetPayment: (state) => {
+      state.formCheckoutValue.payment.method = "";
+      state.formCheckoutValue.payment.channel = "";
+      state.formCheckoutValue.payment.nominal = 0;
+    },
     setItemBuyType: (state, action) => {
       state.formCheckoutValue.itemBuy.type = action.payload;
     },
     setItemBuyNominal: (state, action) => {
       state.formCheckoutValue.itemBuy.nominal = action.payload;
     },
-    // setDynamicForm: (state, action) => {
-    //   state[action.key] = action.payload;
-    // }
-    setFormCheckoutValueToInitialState: (state) => {
-      state.formCheckoutValue = {
-        idGame: "",
-        server: "",
-        itemBuy: {
-          type: "",
-          nominal: 0
-        },
-        whatsAppNumber: "081211899299",
-        payment: {
-          method: "",
-          nominal: 0
-        },
-        promoCode: "",
-      };
-    },
+    setFormCheckoutValueToInitialState: () => {
+      return initialState;
+    }
   }
 });
 
-export const { setIdGame, setServer, setWhatsAppNumber, setPaymentMethod, setPaymentNominal, setPaymentChannel, setPromoCode } = formCheckoutSlice.actions;
+export const { setIdGame, setServer, setWhatsAppNumber, setPaymentMethod, setPaymentNominal, resetPayment, setPaymentChannel, setPromoCode, setFormCheckoutValueToInitialState } = formCheckoutSlice.actions;
 
 export default formCheckoutSlice.reducer;

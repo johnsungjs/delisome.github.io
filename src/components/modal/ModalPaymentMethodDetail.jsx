@@ -1,6 +1,9 @@
 import { ArrowBack, Close } from "@mui/icons-material";
 import { useDispatch } from "react-redux";
-import { setPaymentChannel } from "../../services/redux/features/form/formCheckoutSlice";
+import {
+  resetPayment,
+  setPaymentChannel,
+} from "../../services/redux/features/form/formCheckoutSlice";
 
 // modified from source: https://dev.to/franciscomendes10866/how-to-create-a-modal-in-react-3coc
 // to make modal on top of everything, set z-[999] and z-[999]
@@ -33,7 +36,10 @@ export default function ModalPaymentMethodDetail({
             <h1 className="text-lg text-start">{childrenData.name}</h1>
             <button
               className="cursor-pointer text-black"
-              onClick={() => setIsOpen(false)}
+              onClick={() => {
+                setIsOpen(false);
+                dispatch(resetPayment());
+              }}
             >
               <Close />
             </button>
