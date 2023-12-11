@@ -11,6 +11,7 @@ import {
   setFormCheckoutValueToInitialState,
 } from "../services/redux/features/form/formCheckoutSlice";
 import ModalItemBuy from "../components/modal/ModalItemBuy";
+import { dummyItemBuy } from "../services/dummy/data-dummy/dataDummy";
 
 export default function DetailItemPage() {
   const dispatch = useDispatch();
@@ -86,7 +87,7 @@ export default function DetailItemPage() {
             <div className="w-[24px] h-[24px] bg-white text-center text-primary rounded-md font-bold">
               2
             </div>
-            <p className="pl-2 font-bold">Pilih Nominal Diamond</p>
+            <p className="pl-2 font-bold">Pilih Item Yang Ingin Dibeli</p>
           </div>
           <div className="flex pt-4 gap-1">
             <div
@@ -172,7 +173,9 @@ export default function DetailItemPage() {
       {showModal.paymentMethod && (
         <ModalPaymentMethod setIsOpen={setShowModalPaymentMethod} />
       )}
-      {showModal.itemBuy && <ModalItemBuy setIsOpen={setShowModalItemBuy} />}
+      {showModal.itemBuy && (
+        <ModalItemBuy setIsOpen={setShowModalItemBuy} parentData={dummyItemBuy} />
+      )}
     </>
   );
 }

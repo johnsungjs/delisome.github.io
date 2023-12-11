@@ -53,7 +53,7 @@ export default function ModalPaymentMethod({ setIsOpen }) {
 
           <div className="max-h-[70vh] overflow-auto">
             {dummyPaymentMethod.map((data, index) => {
-              if (data.children.length > 0) {
+              if (data.children && data.children.length > 0) {
                 return (
                   <div
                     key={index}

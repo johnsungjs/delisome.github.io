@@ -312,5 +312,98 @@ export const dummyPaymentMethod = [
       { name: "Alfamart", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" }
     ]
   },
-
 ];
+
+//viewStyle = list || grid
+export const dummyItemBuy = {
+  title: "Pilih Item",
+  data: [
+    {
+      name: "Packages",
+      image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+      viewStyle: "list",
+      children: [
+        {
+          name: "Weekly Diamond Pass",
+          image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+        },
+        {
+          name: "Twilight Pass",
+          image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+        },
+      ]
+    },
+    {
+      name: "Top Up Diamonds",
+      image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+      viewStyle: "grid",
+      children: [
+        {
+          name: "10 Diamonds",
+          image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+          discount: 5
+        },
+        {
+          name: "11 Diamonds",
+          image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+          discount: 5
+        },
+        {
+          name: "12 Diamonds",
+          image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+          discount: 5
+        },
+        {
+          name: "13 Diamonds",
+          image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+          discount: 5
+        },
+        {
+          name: "14 Diamonds",
+          image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+          discount: 5
+        },
+        {
+          name: "15 Diamonds",
+          image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+          discount: 5
+        },
+        {
+          name: "10 Diamonds",
+          image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+          discount: 5
+        },
+        {
+          name: "10 Diamonds",
+          image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+          discount: 5
+        },
+        {
+          name: "10 Diamonds",
+          image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+          discount: 5
+        },
+        {
+          name: "10 Diamonds",
+          image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+          discount: 5
+        },
+        {
+          name: "10 Diamonds",
+          image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+          discount: 5
+        },
+        {
+          name: "10 Diamonds",
+          image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+          discount: 5
+        },
+        {
+          name: "10 Diamonds",
+          image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+          discount: 5
+        },
+      ]
+    }
+  ]
+};

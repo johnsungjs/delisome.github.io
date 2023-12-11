@@ -1,19 +1,19 @@
 import { ArrowRight, Close } from "@mui/icons-material";
-import { dummyPaymentMethod } from "../../services/dummy/data-dummy/dataDummy";
 import { useState } from "react";
-import ModalPaymentMethodDetail from "./ModalPaymentMethodDetail";
+
 import { useDispatch } from "react-redux";
 import {
   setPaymentMethod,
   setPaymentChannel,
   resetPayment,
 } from "../../services/redux/features/form/formCheckoutSlice";
+import ModalItemBuyDetail from "./ModalItemBuyDetail";
 
 // modified from source: https://dev.to/franciscomendes10866/how-to-create-a-modal-in-react-3coc
 // to make modal on top of everything, set z-[999] and z-[999]
 // to make modal on top of existing layout, set z-0 and z-0
 
-export default function ModalItemBuy({ setIsOpen }) {
+export default function ModalItemBuy({ setIsOpen, parentData }) {
   const dispatch = useDispatch();
 
   const [showDetailModal, setShowDetailModal] = useState(false);
@@ -39,7 +39,7 @@ export default function ModalItemBuy({ setIsOpen }) {
           }`}
         >
           <div className="flex items-center justify-between px-4 py-4 bg-white overflow-hidden rounded-t-2xl font-semibold border-b-2">
-            <h1 className="text-lg text-start">Pilih Items</h1>
+            <h1 className="text-lg text-start">{parentData.title}</h1>
             <button
               className="cursor-pointer text-black"
               onClick={() => {
@@ -52,49 +52,61 @@ export default function ModalItemBuy({ setIsOpen }) {
           </div>
 
           <div className="max-h-[70vh] overflow-auto">
-            {dummyPaymentMethod.map((data, index) => {
-              if (data.children.length > 0) {
-                return (
-                  <div
-                    key={index}
-                    className="flex items-center justify-between border-b-2 px-4 py-4 text-base text-black font-semibold"
-                    onClick={() => {
-                      dispatch(setPaymentMethod(data.name));
-                      setChildrenData(data);
-                      setShowDetailModal(true);
-                    }}
-                  >
-                    <p className="pl-2">{data.name}</p>
-                    <ArrowRight />
-                  </div>
-                );
-              } else {
-                return (
-                  <div
-                    key={index}
-                    className="flex items-center border-b-2 px-4 py-2 text-base text-black font-semibold"
-                    onClick={() => {
-                      dispatch(setPaymentMethod("E-Wallet"));
-                      dispatch(setPaymentChannel(data.name));
-                      setIsOpen(false);
-                    }}
-                  >
-                    <img
-                      alt={data.name}
-                      src={data.image}
-                      className="w-[40px] h-[40px] rounded-lg object-cover"
-                    />
-                    <p className="pl-2">{data.name}</p>
-                  </div>
-                );
-              }
-            })}
+            {parentData &&
+              parentData.data.map((data, index) => {
+                if (data.children && data.children.length > 0) {
+                  return (
+                    <div
+                      key={index}
+                      className={`flex items-center justify-between border-b-2 px-4 ${
+                        data.image ? "py-2" : "py-4"
+                      } text-base text-black font-semibold`}
+                      onClick={() => {
+                        dispatch(setPaymentMethod(data.name));
+                        setChildrenData(data);
+                        setShowDetailModal(true);
+                      }}
+                    >
+                      <div>
+                        {data.image && (
+                          <img
+                            alt={data.name}
+                            src={data.image}
+                            className="w-[40px] h-[40px] rounded-lg object-cover inline"
+                          />
+                        )}
+                        <p className="pl-2 inline">{data.name}</p>
+                      </div>
+                      <ArrowRight />
+                    </div>
+                  );
+                } else {
+                  return (
+                    <div
+                      key={index}
+                      className="flex items-center border-b-2 px-4 py-2 text-base text-black font-semibold"
+                      onClick={() => {
+                        dispatch(setPaymentMethod("E-Wallet"));
+                        dispatch(setPaymentChannel(data.name));
+                        setIsOpen(false);
+                      }}
+                    >
+                      <img
+                        alt={data.name}
+                        src={data.image}
+                        className="w-[40px] h-[40px] rounded-lg object-cover"
+                      />
+                      <p className="pl-2">{data.name}</p>
+                    </div>
+                  );
+                }
+              })}
           </div>
         </div>
       </div>
       {/* MAIN MODAL ENDS */}
       {showDetailModal && (
-        <ModalPaymentMethodDetail
+        <ModalItemBuyDetail
           setIsOpen={setIsOpen}
           setShowDetailModal={setShowDetailModal}
           childrenData={childrenData}
