@@ -9,7 +9,7 @@ import {
 // to make modal on top of everything, set z-[999] and z-[999]
 // to make modal on top of existing layout, set z-0 and z-0
 
-export default function ModalItemBuyDetail({
+export default function ModalItemBuyDetail2({
   setIsOpen,
   setShowDetailModal,
   childrenData,
@@ -72,23 +72,34 @@ export default function ModalItemBuyDetail({
                 </div>
               ))
             ) : (
-              <div className="flex flex-wrap gap-4 items-center justify-center">
+              <div className="">
                 {childrenData.children &&
                   childrenData.children.map((data, index) => (
-                    <div
-                      key={index}
-                      className="w-[80px] h-[80px] shadow-2xl rounded-2xl"
-                      onClick={() => {
-                        dispatch(setItemBuyType(data.name));
-                        setIsOpen(false);
-                      }}
-                    >
-                      <img
-                        alt={data.name}
-                        src={data.image}
-                        className="w-full h-1/2 object-cover rounded-t-2xl"
-                      />
-                      <p className="pt-1 text-xs text-center">{data.name}</p>
+                    <div key={index}>
+                      <p className="px-4 py-2 text-tertiary font-bold">
+                        {data.category}
+                      </p>
+                      <div className="px-4 grid grid-cols-3 gap-2">
+                        {data.items.map((item, index) => (
+                          <div
+                            key={index}
+                            className="aspect-square shadow-2xl rounded-2xl"
+                            onClick={() => {
+                              dispatch(setItemBuyType(item.name));
+                              setIsOpen(false);
+                            }}
+                          >
+                            <img
+                              alt={item.name}
+                              src={item.image}
+                              className="w-full h-1/2 object-cover rounded-t-2xl"
+                            />
+                            <p className="pt-1 text-xs text-center">
+                              {item.name}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   ))}
               </div>

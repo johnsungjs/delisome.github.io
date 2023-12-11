@@ -55,12 +55,19 @@ export const formCheckoutSlice = createSlice({
     setItemBuyNominal: (state, action) => {
       state.formCheckoutValue.itemBuy.nominal = action.payload;
     },
+    resetItemBuy: (state) => {
+      state.formCheckoutValue.itemBuy = {
+        type: "",
+        nominal: 0,
+        quantity: 0
+      };
+    },
     setFormCheckoutValueToInitialState: () => {
       return initialState;
     }
   }
 });
 
-export const { setIdGame, setServer, setWhatsAppNumber, setPaymentMethod, setPaymentNominal, resetPayment, setPaymentChannel, setPromoCode, setFormCheckoutValueToInitialState } = formCheckoutSlice.actions;
+export const { setIdGame, setServer, setWhatsAppNumber, setPaymentMethod, setPaymentNominal, resetPayment, setPaymentChannel, setPromoCode, setItemBuyType, resetItemBuy, setFormCheckoutValueToInitialState } = formCheckoutSlice.actions;
 
 export default formCheckoutSlice.reducer;

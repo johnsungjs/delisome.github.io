@@ -3,11 +3,10 @@ import { useState } from "react";
 
 import { useDispatch } from "react-redux";
 import {
-  setPaymentMethod,
-  setPaymentChannel,
-  resetPayment,
+  resetItemBuy,
 } from "../../services/redux/features/form/formCheckoutSlice";
 import ModalItemBuyDetail from "./ModalItemBuyDetail";
+import ModalItemBuyDetail2 from "./ModalItemBuyDetail2";
 
 // modified from source: https://dev.to/franciscomendes10866/how-to-create-a-modal-in-react-3coc
 // to make modal on top of everything, set z-[999] and z-[999]
@@ -43,7 +42,7 @@ export default function ModalItemBuy({ setIsOpen, parentData }) {
             <button
               className="cursor-pointer text-black"
               onClick={() => {
-                dispatch(resetPayment());
+                dispatch(resetItemBuy());
                 setIsOpen(false);
               }}
             >
@@ -62,7 +61,6 @@ export default function ModalItemBuy({ setIsOpen, parentData }) {
                         data.image ? "py-2" : "py-4"
                       } text-base text-black font-semibold`}
                       onClick={() => {
-                        dispatch(setPaymentMethod(data.name));
                         setChildrenData(data);
                         setShowDetailModal(true);
                       }}
@@ -86,8 +84,6 @@ export default function ModalItemBuy({ setIsOpen, parentData }) {
                       key={index}
                       className="flex items-center border-b-2 px-4 py-2 text-base text-black font-semibold"
                       onClick={() => {
-                        dispatch(setPaymentMethod("E-Wallet"));
-                        dispatch(setPaymentChannel(data.name));
                         setIsOpen(false);
                       }}
                     >
@@ -106,7 +102,7 @@ export default function ModalItemBuy({ setIsOpen, parentData }) {
       </div>
       {/* MAIN MODAL ENDS */}
       {showDetailModal && (
-        <ModalItemBuyDetail
+        <ModalItemBuyDetail2
           setIsOpen={setIsOpen}
           setShowDetailModal={setShowDetailModal}
           childrenData={childrenData}

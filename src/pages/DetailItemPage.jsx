@@ -11,7 +11,7 @@ import {
   setFormCheckoutValueToInitialState,
 } from "../services/redux/features/form/formCheckoutSlice";
 import ModalItemBuy from "../components/modal/ModalItemBuy";
-import { dummyItemBuy } from "../services/dummy/data-dummy/dataDummy";
+import { dummyItemBuy, dummyItemBuy2 } from "../services/dummy/data-dummy/dataDummy";
 
 export default function DetailItemPage() {
   const dispatch = useDispatch();
@@ -174,7 +174,7 @@ export default function DetailItemPage() {
         <ModalPaymentMethod setIsOpen={setShowModalPaymentMethod} />
       )}
       {showModal.itemBuy && (
-        <ModalItemBuy setIsOpen={setShowModalItemBuy} parentData={dummyItemBuy} />
+        <ModalItemBuy setIsOpen={setShowModalItemBuy} parentData={dummyItemBuy2} />
       )}
     </>
   );
