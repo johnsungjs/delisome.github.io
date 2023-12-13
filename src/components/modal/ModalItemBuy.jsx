@@ -52,7 +52,7 @@ export default function ModalItemBuy({ setIsOpen, parentData }) {
 
           <div className="max-h-[70vh] overflow-auto">
             {parentData &&
-              parentData.data.map((data, index) => {
+              parentData.children.map((data, index) => {
                 if (data.children && data.children.length > 0) {
                   return (
                     <div

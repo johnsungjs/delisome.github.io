@@ -422,6 +422,91 @@ export const dummyItemBuy = {
 };
 export const dummyItemBuy2 = {
   title: "Pilih Item",
+  children: [
+    {
+      name: "Packages",
+      image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+      viewStyle: "list",
+      children: [
+        {
+          name: "Weekly Diamond Pass",
+          image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+        },
+        {
+          name: "Twilight Pass",
+          image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+        },
+      ]
+    },
+    {
+      name: "Top Up Diamonds",
+      image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+      viewStyle: "grid",
+      children: [
+        {
+          category: "Popular",
+          children: [
+            {
+              name: "10 Diamonds",
+              image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+              discount: 6,
+              isPopular: true
+            },
+            {
+              name: "11 Diamonds",
+              image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+              discount: 5,
+              isPopular: false
+            },
+            {
+              name: "12 Diamonds",
+              image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+              discount: 5,
+              isPopular: true
+            },
+            {
+              name: "13 Diamonds",
+              image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+              discount: 5,
+              isPopular: true
+            },
+          ]
+        },
+        {
+          category: "More Diamonds",
+          children: [
+            {
+              name: "14 Diamonds",
+              image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+              discount: 10,
+              isPopular: false
+            },
+            {
+              name: "15 Diamonds",
+              image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+              discount: 5,
+              isPopular: true
+            },
+            {
+              name: "10 Diamonds",
+              image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+              discount: 5,
+              isPopular: true
+            },
+            {
+              name: "10 Diamonds",
+              image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+              discount: 5,
+              isPopular: false
+            },
+          ]
+        }
+      ]
+    }
+  ]
+};
+export const dummyItemBuy2Backup = {
+  title: "Pilih Item",
   data: [
     {
       name: "Packages",

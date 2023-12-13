@@ -5,13 +5,13 @@ const initialState = {
     idGame: "",
     server: "",
     itemBuy: {
-      type: "",
+      type: "Pilih Item",
       nominal: 0,
       quantity: 0
     },
     whatsAppNumber: "081211899299",
     payment: {
-      method: "",
+      method: "Pilih Metode Bayar",
       channel: "",
       nominal: 0
     },
@@ -45,7 +45,7 @@ export const formCheckoutSlice = createSlice({
       state.formCheckoutValue.payment.nominal = action.payload;
     },
     resetPayment: (state) => {
-      state.formCheckoutValue.payment.method = "";
+      state.formCheckoutValue.payment.method = "Pilih Metode Bayar";
       state.formCheckoutValue.payment.channel = "";
       state.formCheckoutValue.payment.nominal = 0;
     },
@@ -57,7 +57,7 @@ export const formCheckoutSlice = createSlice({
     },
     resetItemBuy: (state) => {
       state.formCheckoutValue.itemBuy = {
-        type: "",
+        type: "Pilih Item",
         nominal: 0,
         quantity: 0
       };

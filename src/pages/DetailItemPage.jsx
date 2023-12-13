@@ -96,8 +96,7 @@ export default function DetailItemPage() {
             >
               <Diamond />
               <p className="w-auto px-2 py-2 bg-transparent outline-none opacity-70">
-                {formCheckoutValue.itemBuy.type} -{" "}
-                {formCheckoutValue.itemBuy.quantity}
+                {formCheckoutValue.itemBuy.type}
               </p>
               <p className="ml-auto">Rp.{formCheckoutValue.itemBuy.nominal}</p>
             </div>
