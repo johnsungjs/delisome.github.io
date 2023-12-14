@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
-import Header from "../components/Header";
 import { Search } from "@mui/icons-material";
 import { dummyListGames } from "../services/dummy/data-dummy/dataDummy";
 import SimpleLayout from "../components/layouts/SimpleLayout";
+import { useNavigate } from "react-router-dom";
 
 export default function SearchPage() {
+  const navigate = useNavigate();
+
   const [searchValue, setSearchValue] = useState("");
   const [items, setItems] = useState([]);
 
@@ -37,6 +39,7 @@ export default function SearchPage() {
   //     return () => clearTimeout(delayRebounceFn);
   //   }
   // }, [searchValue]);
+
   return (
     <>
       <SimpleLayout text={"Search"}>
@@ -56,7 +59,17 @@ export default function SearchPage() {
           {filteredData && filteredData.length > 0 ? (
             filteredData.map((item, index) => (
               <div key={index}>
-                <div className="border-2 p-4 mb-4 rounded-xl">{item.name}</div>
+                <div
+                  className="border-b-[1px] border-gray-600 mt-4 pb-4 flex items-center"
+                  onClick={() => navigate("/detail-item")}
+                >
+                  <img
+                    alt={item.name}
+                    src={item.image}
+                    className="w-[68px] h-[68px] rounded-lg object-cover"
+                  />
+                  <p className="pl-2">{item.name}</p>
+                </div>
               </div>
             ))
           ) : (

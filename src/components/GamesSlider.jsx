@@ -28,8 +28,8 @@ export default function GamesSlider() {
             grabCursor={true}
             slidesPerView={2.5}
             spaceBetween={10}
-            centeredSlides={true}
-            loop={gamesData.length > 1 ? true : false}
+            centeredSlides={false}
+            loop={gamesData.length > 3 ? true : false}
           >
             {gamesData.map((data, index) => (
               <SwiperSlide key={index} className="rounded-2xl">
