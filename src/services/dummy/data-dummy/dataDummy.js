@@ -129,32 +129,32 @@ export const dummyListGames = [
     image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
   },
   {
-    title: "Mobile Legends",
+    title: "Fortnite",
     discount: 20,
     image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
   },
   {
-    title: "Mobile Legends",
+    title: "Pubg",
     discount: 20,
     image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
   },
   {
-    title: "Mobile Legends",
+    title: "Zeus",
     discount: 20,
     image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
   },
   {
-    title: "Mobile Legends",
+    title: "Genshin Impact",
     discount: 20,
     image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
   },
   {
-    title: "Mobile Legends",
+    title: "Point Blank",
     discount: 20,
     image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
   },
   {
-    title: "Mobile Legends",
+    title: "Crossfire",
     discount: 20,
     image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
   },
@@ -590,3 +590,47 @@ export const dummyItemBuy2Backup = {
     }
   ]
 };
+
+
+
+// CASE: buat menu payment method
+// flow: klik metode pembayaran -> pilih jenis metode -> pilih penyedia jasa
+// example: klik metode pembayaran -> klik bank transfer -> klik bca
+
+// struktur yang dibutuhkan menjadi begini:
+// [
+//   {
+//     id: "1",
+//     name: "Bank Transfer",
+//     image: "image.jpg",
+//     children: [
+//       {
+//         id:"x",
+//         name: "BCA",
+//         image: "image.jpg",
+//       },
+//       {
+//         id:"x",
+//         name: "Mandiri",
+//         image: "image.jpg",
+//       }
+//     ]
+//   },
+//   {
+//     id: "2",
+//     name: "E-Wallet",
+//     image: "image.jpg",
+//     children:[
+//       {
+//         id:"x",
+//         name: "OVO",
+//         image: "image.jpg",
+//       },
+//       {
+//         id:"x",
+//         name: "GOPAY",
+//         image: "image.jpg",
+//       }
+//     ]
+//   }
+// ]

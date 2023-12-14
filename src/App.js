@@ -12,6 +12,7 @@ import RegisterPage from './pages/RegisterPage';
 import ContactUsPage from './pages/ContactUsPage';
 import ProfileEditPage from './pages/ProfileEditPage';
 import DetailItemPage from './pages/DetailItemPage';
+import SearchPage from './pages/SearchPage';
 
 function App() {
   const router = createBrowserRouter(
@@ -32,6 +33,7 @@ function App() {
           <Route path='/contact-us' element={<ContactUsPage />} />
           <Route path='/profile-edit' element={<ProfileEditPage />} />
           <Route path='/detail-item' element={<DetailItemPage />} />
+          <Route path='/search' element={<SearchPage />} />
         </Route>
       </>
     )

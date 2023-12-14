@@ -133,10 +133,10 @@ export default function SideNavbar({ showSideNavbar, setShowSideNavbar }) {
 
       {/* MAKE SIDENAV TRANSITION SMOOTHER WITH THIS DIV */}
       <div
-        className={`fixed left-0 z-50 w-full max-w-[calc((100%-56rem)/2)] h-full bg-white`}
+        className={`fixed left-0 z-50 w-full max-w-[calc((100%-56rem)/2)] h-full bg-primary`}
       />
       <div
-        className={`fixed right-0 z-50 w-full max-w-[calc((100%-56rem)/2)] h-full bg-white`}
+        className={`fixed right-0 z-50 w-full max-w-[calc((100%-56rem)/2)] h-full bg-primary`}
       />
     </>
   );
