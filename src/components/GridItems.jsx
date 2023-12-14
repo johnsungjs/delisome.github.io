@@ -14,10 +14,7 @@ export default function GridItems({ items }) {
               alt={index}
               src={item.image}
               className="w-full h-full rounded-2xl object-cover"
-              onClick={() => {
-                saveHistoryToLocalStorage(item);
-                navigate("/detail-item");
-              }}
+              onClick={() => navigate("/detail-item", { state: item })}
             />
             <p className="pt-1 text-sm text-center font-bold">{item.name}</p>
           </div>

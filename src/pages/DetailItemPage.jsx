@@ -1,5 +1,5 @@
 import { Diamond, Wallet } from "@mui/icons-material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ModalPaymentMethod from "../components/modal/ModalPaymentMethod";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -10,13 +10,19 @@ import {
   setFormCheckoutValueToInitialState,
 } from "../services/redux/features/form/formCheckoutSlice";
 import ModalItemBuy from "../components/modal/ModalItemBuy";
-import {
-  dummyItemBuy2,
-} from "../services/dummy/data-dummy/dataDummy";
+import { dummyItemBuy2 } from "../services/dummy/data-dummy/dataDummy";
 import SimpleLayout from "../components/layouts/SimpleLayout";
+import { useLocation } from "react-router-dom";
+import { saveHistoryToLocalStorage } from "../services/universal-functions/universalFunctions";
 
 export default function DetailItemPage() {
+  const location = useLocation();
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    saveHistoryToLocalStorage(location.state || {});
+  }, []);
+
   const formCheckoutValue = useSelector(
     (state) => state.formCheckout.formCheckoutValue
   );
@@ -49,14 +55,17 @@ export default function DetailItemPage() {
   return (
     <>
       {/* NAVIGATION STARTS */}
-      <SimpleLayout text={"Mobile Legends"} textColor={"unguMuda"}>
+      <SimpleLayout
+        text={location.state.name || "No Name"}
+        textColor={"unguMuda"}
+      >
         <img
-          alt="game"
-          src="https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true"
-          className="absolute top-6 -z-10 opacity-30"
+          alt={location.state.name || "No Name"}
+          src={location.state.image || ""}
+          className="absolute w-full h-[220px] top-6 -z-10 opacity-30 object-cover"
         />
         {/* FORM STARTS */}
-        <div className="pt-36">
+        <div className="pt-40">
           <form className="px-6 pb-10" onSubmit={handleSubmit}>
             {/* SECTION FIRST STARTS */}
             <div className="flex pt-4">

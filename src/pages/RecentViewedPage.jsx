@@ -15,7 +15,7 @@ export default function RecentViewedPage() {
             <div key={index}>
               <div
                 className="border-b-[1px] border-gray-600 mt-4 pb-4 flex items-center"
-                onClick={() => navigate("/detail-item")}
+                onClick={() => navigate("/detail-item", { state: history })}
               >
                 <img
                   alt={history.name}

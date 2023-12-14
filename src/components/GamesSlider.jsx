@@ -35,10 +35,7 @@ export default function GamesSlider() {
               <SwiperSlide key={index} className="rounded-2xl">
                 <div
                   className="w-full h-40 px-1"
-                  onClick={() => {
-                    saveHistoryToLocalStorage(data);
-                    navigate("/detail-item");
-                  }}
+                  onClick={() => navigate("/detail-item", { state: data })}
                 >
                   <img
                     src={data.image}

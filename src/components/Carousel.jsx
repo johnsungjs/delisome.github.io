@@ -6,10 +6,12 @@ import "swiper/css/effect-coverflow";
 import { EffectCoverflow } from "swiper/modules";
 
 import { dummyCarouselData } from "../services/dummy/data-dummy/dataDummy";
+import { useNavigate } from "react-router-dom";
 
 const carouselData = dummyCarouselData;
 
 export default function Carousel() {
+  const navigate = useNavigate()
   return (
     <>
       {/* SECTION CAROUSEL START*/}
@@ -35,7 +37,9 @@ export default function Carousel() {
         >
           {carouselData.map((data, index) => (
             <SwiperSlide key={index} className="rounded-2xl">
-              <div className="carousel">
+              <div className="carousel"
+              onClick={() => navigate("/detail-item", { state: data })}
+              >
                 <img
                   width={"100%"}
                   src={data.image}

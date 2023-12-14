@@ -61,7 +61,7 @@ export default function SearchPage() {
               <div key={index}>
                 <div
                   className="border-b-[1px] border-gray-600 mt-4 pb-4 flex items-center"
-                  onClick={() => navigate("/detail-item")}
+                  onClick={() => navigate("/detail-item", { state: item })}
                 >
                   <img
                     alt={item.name}
