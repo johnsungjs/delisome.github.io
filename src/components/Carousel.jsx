@@ -40,7 +40,7 @@ export default function Carousel() {
                 />
                 <div className="absolute top-24 left-10">
                   <p className="text-red-300">{data.genre.toUpperCase()}</p>
-                  <p className="text-white text-xl font-bold">{data.title}</p>
+                  <p className="text-white text-xl font-bold">{data.name}</p>
                 </div>
                 <p className="px-6 pt-4 pb-4 text-[10px] md:text-base break-words">
                   {data.info}

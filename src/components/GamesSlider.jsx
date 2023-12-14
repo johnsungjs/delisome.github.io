@@ -13,7 +13,7 @@ export default function GamesSlider() {
   return (
     <>
       {/* SECTION GAMES SLIDER START*/}
-      <div className="pt-2 pb-8 px-0">
+      <div className="pt-2 pb-2 px-0">
         <Swiper
           modules={[Virtual]}
           grabCursor={true}
@@ -31,7 +31,7 @@ export default function GamesSlider() {
                   className="w-full h-full rounded-2xl object-cover"
                 />
                 <div className="absolute bottom-4 left-4">
-                  <p className="text-white text-md font-bold">{data.title}</p>
+                  <p className="text-white text-md font-bold">{data.name}</p>
                   <button className="bg-tertiary px-2 py-1 border border-tertiary text-sm text-white rounded-xl">
                     - {data.discount}%
                   </button>

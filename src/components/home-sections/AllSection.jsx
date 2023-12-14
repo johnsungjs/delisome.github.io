@@ -1,3 +1,4 @@
+import Articles from "../Articles";
 import Carousel from "../Carousel";
 import GamesSlider from "../GamesSlider";
 
@@ -9,9 +10,13 @@ export default function AllSection() {
       {/* SECTION CARDS START*/}
       <div className="px-4 pb-2 flex justify-between items-center">
         <p className="font-bold text-lg">Recently Viewed</p>
-        <button className="px-4 py-2 bg-transparent border border-tertiary text-sm text-purple-200 rounded-xl">See More</button>
+        <button className="px-4 py-2 bg-transparent border border-tertiary text-sm text-purple-200 rounded-xl">
+          See More
+        </button>
       </div>
       <GamesSlider />
+      <div className="pl-4 pt-2 font-bold text-xl">Articles</div>
+      <Articles />
       {/* SECTION CARDS END*/}
     </>
   );

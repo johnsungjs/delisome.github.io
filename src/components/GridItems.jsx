@@ -5,16 +5,16 @@ export default function GridItems({ items }) {
   const navigate = useNavigate();
   return (
     <>
-      <div className="flex flex-wrap justify-center gap-[14px]">
+      <div className="px-4 grid grid-cols-3 gap-[14px]">
         {items.map((e, index) => (
-          <div key={index} className="w-[calc((100%/3)-25px)]">
+          <div key={index} className="aspect-square">
             <img
               alt={index}
               src={e.image}
-              className="w-full h-[95px] rounded-2xl object-cover"
+              className="w-full h-full rounded-2xl object-cover"
               onClick={() => navigate("/detail-item")}
             />
-            <p className="pt-1 text-sm text-center font-bold">{e.title}</p>
+            <p className="pt-1 text-sm text-center font-bold">{e.name}</p>
           </div>
         ))}
       </div>

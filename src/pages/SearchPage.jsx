@@ -22,11 +22,9 @@ export default function SearchPage() {
       if (searchValue === "") {
         return e;
       } else {
-        return e.title.toUpperCase().includes(searchValue.toUpperCase());
+        return e.name.toUpperCase().includes(searchValue.toUpperCase());
       }
     });
-
-  console.log(filteredData);
 
   // useEffect(() => {
   //   if (searchValue.length > 0) {
@@ -57,7 +55,7 @@ export default function SearchPage() {
         {filteredData && filteredData.length > 0 ? (
           filteredData.map((item, index) => (
             <div key={index}>
-              <div className="border-2 p-4 mb-4 rounded-xl">{item.title}</div>
+              <div className="border-2 p-4 mb-4 rounded-xl">{item.name}</div>
             </div>
           ))
         ) : (

@@ -14,13 +14,13 @@ export default function ListItemsWithDate({ items }) {
                 <div className="flex justify-between">
                   <div className="flex justify-start leading-none">
                     <img
-                      alt={data.title}
+                      alt={data.name}
                       src={data.image}
                       className="w-[90px] h-[90px] rounded-l-xl object-cover"
                     />
                     <div className="relative pl-2 pt-2">
                       <div className="text-sm">{data.category}</div>
-                      <div className="font-bold line-clamp-2">{data.title}</div>
+                      <div className="font-bold line-clamp-2">{data.name}</div>
                       <div className="absolute bottom-2 text-xs text-abuMuda">
                         {data.date}
                       </div>

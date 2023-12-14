@@ -1,109 +1,34 @@
-export const topUpDummy = [
-  {
-    title: "Mobile Legends"
-  },
-  {
-    title: "Valorant"
-  },
-  {
-    title: "Genshin Impact"
-  },
-  {
-    title: "Free Fire"
-  },
-  {
-    title: "Roblox"
-  },
-  {
-    title: "Boss Domino"
-  },
-  {
-    title: "Call of Duty"
-  },
-  {
-    title: "Zeus Legend"
-  },
-  {
-    title: "gatau apalah"
-  },
-  {
-    title: "gatau apalah"
-  },
-  {
-    title: "gatau apalah"
-  },
-  {
-    title: "gatau apalah"
-  },
-  {
-    title: "gatau apalah"
-  },
-  {
-    title: "gatau apalah"
-  },
-  {
-    title: "gatau apalah"
-  },
-  {
-    title: "gatau apalah"
-  },
-  {
-    title: "gatau apalah"
-  },
-  {
-    title: "gatau apalah"
-  },
-  {
-    title: "gatau apalah"
-  },
-  {
-    title: "gatau apalah"
-  },
-  {
-    title: "gatau apalah"
-  },
-  {
-    title: "gatau apalah"
-  },
-  {
-    title: "gatau apalah"
-  },
-  {
-    title: "gatau apalah"
-  },
-];
-
 export const dummyCarouselData = [
   {
-    title: "Mobile Legends",
+    name: "Mobile Legends",
     info: "Permainan video seluler ber-genre multiplayer online battle arena yang dikembangkan dan diterbitkan oleh Moonton, anak perusahaan dari ByteDance",
     genre: "action",
     image:
       "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
   },
   {
-    title: "Mobile Legends",
+    name: "Mobile Legends",
     info: "Permainan video seluler ber-genre multiplayer online battle arena yang dikembangkan dan diterbitkan oleh Moonton, anak perusahaan dari ByteDance",
     genre: "action",
     image:
       "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
   },
   {
-    title: "Mobile Legends",
+    name: "Mobile Legends",
     info: "Permainan video seluler ber-genre multiplayer online battle arena yang dikembangkan dan diterbitkan oleh Moonton, anak perusahaan dari ByteDance",
     genre: "action",
     image:
       "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
   },
   {
-    title: "Mobile Legends",
+    name: "Mobile Legends",
     info: "Permainan video seluler ber-genre multiplayer online battle arena yang dikembangkan dan diterbitkan oleh Moonton, anak perusahaan dari ByteDance",
     genre: "action",
     image:
       "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
   },
   {
-    title: "Mobile Legends",
+    name: "Mobile Legends",
     info: "Permainan video seluler ber-genre multiplayer online battle arena yang dikembangkan dan diterbitkan oleh Moonton, anak perusahaan dari ByteDance",
     genre: "action",
     image:
@@ -114,47 +39,42 @@ export const dummyCarouselData = [
 
 export const dummyListGames = [
   {
-    title: "Fortnite",
+    name: "Fortnite",
     discount: 20,
     image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
   },
   {
-    title: "Mobile Legends Bang Bang",
+    name: "Mobile Legends Bang Bang",
     discount: 20,
     image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
   },
   {
-    title: "Mobile Legends",
+    name: "Mobile Legends",
     discount: 20,
     image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
   },
   {
-    title: "Fortnite",
+    name: "Pubg",
     discount: 20,
     image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
   },
   {
-    title: "Pubg",
+    name: "Zeus",
     discount: 20,
     image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
   },
   {
-    title: "Zeus",
+    name: "Genshin Impact",
     discount: 20,
     image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
   },
   {
-    title: "Genshin Impact",
+    name: "Point Blank",
     discount: 20,
     image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
   },
   {
-    title: "Point Blank",
-    discount: 20,
-    image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
-  },
-  {
-    title: "Crossfire",
+    name: "Crossfire",
     discount: 20,
     image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
   },
@@ -166,7 +86,7 @@ export const dummyHistory = [
     dataTransaction: [
       {
         category: "Top Up",
-        title: "Mobile Legends",
+        name: "Mobile Legends",
         image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
         date: "November 1 2023",
         price: "Rp15.000",
@@ -174,7 +94,7 @@ export const dummyHistory = [
       },
       {
         category: "Top Up",
-        title: "Mobile Legends2",
+        name: "Mobile Legends2",
         image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
         date: "November 1 2023",
         price: "Rp15.000.000",
@@ -182,7 +102,7 @@ export const dummyHistory = [
       },
       {
         category: "Top Up",
-        title: "Mobile Legends3",
+        name: "Mobile Legends3",
         image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
         date: "November 1 2023",
         price: "Rp15.000",
@@ -195,7 +115,7 @@ export const dummyHistory = [
     dataTransaction: [
       {
         category: "Top Up",
-        title: "Mobile Legends",
+        name: "Mobile Legends",
         image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
         date: "November 1 2023",
         price: "Rp15.000",
@@ -208,7 +128,7 @@ export const dummyHistory = [
     dataTransaction: [
       {
         category: "Top Up",
-        title: "Mobile Legends",
+        name: "Mobile Legends",
         image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
         date: "November 1 2023",
         price: "Rp15.000",
@@ -216,7 +136,7 @@ export const dummyHistory = [
       },
       {
         category: "Top Up",
-        title: "Mobile Legends2",
+        name: "Mobile Legends2",
         image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
         date: "November 1 2023",
         price: "Rp15.000",
@@ -224,7 +144,7 @@ export const dummyHistory = [
       },
       {
         category: "Top Up",
-        title: "Mobile Legends3",
+        name: "Mobile Legends3",
         image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
         date: "November 1 2023",
         price: "Rp15.000",
