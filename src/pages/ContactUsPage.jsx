@@ -1,5 +1,4 @@
 import { Email, Feedback, WhatsApp } from "@mui/icons-material";
-import Header from "../components/Header";
 import customerService from "../assets/customer-service.svg";
 import { whatsAppLink } from "../services/links/whatsAppLinks";
 import SimpleLayout from "../components/layouts/SimpleLayout";

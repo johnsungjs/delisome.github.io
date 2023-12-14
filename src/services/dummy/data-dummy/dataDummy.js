@@ -4,37 +4,29 @@ export const dummyCarouselData = [
     info: "Permainan video seluler ber-genre multiplayer online battle arena yang dikembangkan dan diterbitkan oleh Moonton, anak perusahaan dari ByteDance",
     genre: "action",
     image:
-      "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
+      "https://iili.io/JuBODqN.png",
   },
   {
-    name: "Mobile Legends",
+    name: "Pubg",
     info: "Permainan video seluler ber-genre multiplayer online battle arena yang dikembangkan dan diterbitkan oleh Moonton, anak perusahaan dari ByteDance",
     genre: "action",
     image:
-      "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
+      "https://iili.io/JuByeS9.png",
   },
   {
-    name: "Mobile Legends",
+    name: "Fortnite",
     info: "Permainan video seluler ber-genre multiplayer online battle arena yang dikembangkan dan diterbitkan oleh Moonton, anak perusahaan dari ByteDance",
     genre: "action",
     image:
-      "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
+      "https://iili.io/JuBec21.png",
   },
   {
-    name: "Mobile Legends",
+    name: "Valorant",
     info: "Permainan video seluler ber-genre multiplayer online battle arena yang dikembangkan dan diterbitkan oleh Moonton, anak perusahaan dari ByteDance",
     genre: "action",
     image:
-      "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
-  },
-  {
-    name: "Mobile Legends",
-    info: "Permainan video seluler ber-genre multiplayer online battle arena yang dikembangkan dan diterbitkan oleh Moonton, anak perusahaan dari ByteDance",
-    genre: "action",
-    image:
-      "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
-  },
-
+      "https://iili.io/JuCFymP.png",
+  }
 ];
 
 export const dummyListGames = [

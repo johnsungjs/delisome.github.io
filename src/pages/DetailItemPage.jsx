@@ -1,5 +1,4 @@
 import { Diamond, Wallet } from "@mui/icons-material";
-import Header from "../components/Header";
 import { useState } from "react";
 import ModalPaymentMethod from "../components/modal/ModalPaymentMethod";
 import { useDispatch, useSelector } from "react-redux";
@@ -12,7 +11,6 @@ import {
 } from "../services/redux/features/form/formCheckoutSlice";
 import ModalItemBuy from "../components/modal/ModalItemBuy";
 import {
-  dummyItemBuy,
   dummyItemBuy2,
 } from "../services/dummy/data-dummy/dataDummy";
 import SimpleLayout from "../components/layouts/SimpleLayout";

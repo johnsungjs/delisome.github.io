@@ -36,7 +36,7 @@ export default function Carousel() {
                   width={"100%"}
                   src={data.image}
                   alt="yes"
-                  className="rounded-2xl object-cover mx-auto max-h-[140px]"
+                  className="rounded-2xl object-cover mx-auto h-[140px]"
                 />
                 <div className="absolute top-24 left-10">
                   <p className="text-red-300">{data.genre.toUpperCase()}</p>
