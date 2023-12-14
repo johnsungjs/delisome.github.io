@@ -5,7 +5,7 @@ import "swiper/css/effect-coverflow";
 
 import { Virtual } from "swiper/modules";
 import { useNavigate } from "react-router-dom";
-import { saveHistoryToLocalStorage } from "../services/universal-functions/universalFunctions";
+// import { saveHistoryToLocalStorage } from "../services/universal-functions/universalFunctions";
 
 export default function GamesSlider() {
   const navigate = useNavigate();

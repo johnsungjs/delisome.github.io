@@ -21,7 +21,7 @@ export default function DetailItemPage() {
 
   useEffect(() => {
     saveHistoryToLocalStorage(location.state || {});
-  }, []);
+  }, [location.state]);
 
   const formCheckoutValue = useSelector(
     (state) => state.formCheckout.formCheckoutValue

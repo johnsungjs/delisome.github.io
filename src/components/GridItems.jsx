@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
-import { saveHistoryToLocalStorage } from "../services/universal-functions/universalFunctions";
+// import { saveHistoryToLocalStorage } from "../services/universal-functions/universalFunctions";
 
 export default function GridItems({ items }) {
   const navigate = useNavigate();

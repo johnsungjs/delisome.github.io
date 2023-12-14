@@ -1,7 +1,7 @@
 import { useState } from "react";
 import BreadCrumbs from "../components/BreadCrumbs";
 import SectionSelector from "../components/home-sections/SectionSelector";
-import SearchField from "../components/SearchField";
+// import SearchField from "../components/SearchField";
 
 export default function HomePage() {
   const [section, setSection] = useState(0);
