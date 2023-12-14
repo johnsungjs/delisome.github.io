@@ -34,6 +34,7 @@ export async function hitLogin({ email, password }) {
   if (res && res.data.status === 200) {
     localStorage.setItem("authToken", res.data.data.authToken);
     localStorage.setItem("refreshToken", res.data.data.refreshToken);
+    localStorage.setItem("recentViewed", [])
   }
 
   return res;

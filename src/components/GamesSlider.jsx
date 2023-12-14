@@ -4,44 +4,57 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 
 import { Virtual } from "swiper/modules";
-
-import { dummyListGames } from "../services/dummy/data-dummy/dataDummy";
-
-const gamesData = dummyListGames;
+import { useNavigate } from "react-router-dom";
 
 export default function GamesSlider() {
-  return (
-    <>
-      {/* SECTION GAMES SLIDER START*/}
-      <div className="pt-2 pb-2 px-0">
-        <Swiper
-          modules={[Virtual]}
-          grabCursor={true}
-          slidesPerView={2.5}
-          spaceBetween={10}
-          centeredSlides={true}
-          loop={true}
-        >
-          {gamesData.map((data, index) => (
-            <SwiperSlide key={index} className="rounded-2xl">
-              <div className="w-full h-40 px-1">
-                <img
-                  src={data.image}
-                  alt="yes"
-                  className="w-full h-full rounded-2xl object-cover"
-                />
-                <div className="absolute bottom-4 left-4">
-                  <p className="text-white text-md font-bold">{data.name}</p>
-                  <button className="bg-tertiary px-2 py-1 border border-tertiary text-sm text-white rounded-xl">
-                    - {data.discount}%
-                  </button>
+  const navigate = useNavigate();
+  const gamesData = JSON.parse(localStorage.getItem("recentViewed") || "[]");
+  if (gamesData && gamesData.length > 0) {
+    return (
+      <>
+        <div className="px-4 pb-2 flex justify-between items-center">
+          <p className="font-bold text-lg">Recently Viewed</p>
+          <button className="px-4 py-2 bg-transparent border border-tertiary text-sm text-purple-200 rounded-xl"
+          onClick={() => navigate("/recent-viewed")}>
+            See More
+          </button>
+        </div>
+        <div className="pt-2 pb-2 px-0">
+          <Swiper
+            modules={[Virtual]}
+            grabCursor={true}
+            slidesPerView={2.5}
+            spaceBetween={10}
+            centeredSlides={true}
+            loop={gamesData.length > 1 ? true : false}
+          >
+            {gamesData.map((data, index) => (
+              <SwiperSlide key={index} className="rounded-2xl">
+                <div
+                  className="w-full h-40 px-1"
+                  onClick={() => navigate("/detail-item")}
+                >
+                  <img
+                    src={data.image}
+                    alt="yes"
+                    className="w-full h-full rounded-2xl object-cover"
+                  />
+                  <div className="absolute bottom-4 left-4">
+                    <p className="text-white text-md font-bold">{data.name}</p>
+                    {data.discount && (
+                      <button className="bg-tertiary px-2 py-1 border border-tertiary text-sm text-white rounded-xl">
+                        - {data.discount}%
+                      </button>
+                    )}
+                  </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-      {/* SECTION GAMES SLIDER ENDS*/}
-    </>
-  );
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </>
+    );
+  } else {
+    return <></>;
+  }
 }
