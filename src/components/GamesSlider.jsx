@@ -5,6 +5,7 @@ import "swiper/css/effect-coverflow";
 
 import { Virtual } from "swiper/modules";
 import { useNavigate } from "react-router-dom";
+import { saveHistoryToLocalStorage } from "../services/universal-functions/universalFunctions";
 
 export default function GamesSlider() {
   const navigate = useNavigate();
@@ -14,8 +15,10 @@ export default function GamesSlider() {
       <>
         <div className="px-4 pb-2 flex justify-between items-center">
           <p className="font-bold text-lg">Recently Viewed</p>
-          <button className="px-4 py-2 bg-transparent border border-tertiary text-sm text-purple-200 rounded-xl"
-          onClick={() => navigate("/recent-viewed")}>
+          <button
+            className="px-4 py-2 bg-transparent border border-tertiary text-sm text-purple-200 rounded-xl"
+            onClick={() => navigate("/recent-viewed")}
+          >
             See More
           </button>
         </div>
@@ -32,7 +35,10 @@ export default function GamesSlider() {
               <SwiperSlide key={index} className="rounded-2xl">
                 <div
                   className="w-full h-40 px-1"
-                  onClick={() => navigate("/detail-item")}
+                  onClick={() => {
+                    saveHistoryToLocalStorage(data);
+                    navigate("/detail-item");
+                  }}
                 >
                   <img
                     src={data.image}

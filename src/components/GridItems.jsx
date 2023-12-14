@@ -1,23 +1,9 @@
 import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
+import { saveHistoryToLocalStorage } from "../services/universal-functions/universalFunctions";
 
 export default function GridItems({ items }) {
   const navigate = useNavigate();
-
-  const handleClick = (data) => {
-    const storage = JSON.parse(localStorage.getItem("recentViewed") || "[]");
-
-    if (storage.length < 10) {
-      storage.unshift(data);
-    } else {
-      storage.pop();
-      storage.unshift(data);
-    }
-
-    localStorage.setItem("recentViewed", JSON.stringify(storage));
-
-    navigate("/detail-item");
-  };
 
   return (
     <>
@@ -28,7 +14,10 @@ export default function GridItems({ items }) {
               alt={index}
               src={item.image}
               className="w-full h-full rounded-2xl object-cover"
-              onClick={() => handleClick(item)}
+              onClick={() => {
+                saveHistoryToLocalStorage(item);
+                navigate("/detail-item");
+              }}
             />
             <p className="pt-1 text-sm text-center font-bold">{item.name}</p>
           </div>
