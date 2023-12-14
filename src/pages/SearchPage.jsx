@@ -50,7 +50,7 @@ export default function SearchPage() {
             id="search"
             type="text"
             className="ml-2 w-full px-4 py-2 rounded-full text-black outline-none"
-            placeholder="Cari game disini xxx"
+            placeholder="Cari game disini"
             value={searchValue}
             onChange={handleChangeSearch}
           />

@@ -45,11 +45,11 @@ https://iili.io/JuCFymP.png
 Gambar Top Up Games
 
 Mole
-https://ibb.co/sRnBpCP
+https://i.ibb.co/kBjdVJy/Jepretan-Layar-2566-12-13-pukul-18-49-13.png
 
 
 Valo
-https://freeimage.host/i/JuBpELQ
+https://iili.io/JuBpELQ.png
 
 
 PUBG Mobile
@@ -61,27 +61,27 @@ https://iili.io/JuBsDwN.png
 
 
 FF
-https://freeimage.host/i/JuBsHkQ
+https://iili.io/JuBsHkQ.png
 
 
 Roblox
-https://freeimage.host/i/JuBgbZg 
+https://iili.io/JuBgbZg.png
 
 
 boss domino
-https://freeimage.host/i/JuBiLIS
+https://iili.io/JuBiLIS.png
 
 
 Honkai: Star Rail
-https://freeimage.host/i/JuBsDwN
+https://iili.io/JuBsDwN.png
 
 
 CoD
-https://ibb.co/R4qyfqm 
+https://i.ibb.co/prSycS8/Jepretan-Layar-2566-12-13-pukul-18-52-42.png
 
 
 Metal Slug: Awakening
-https://freeimage.host/i/JuB6iFf
+https://iili.io/JuB6iFf.jpg
 
 Gambar bagian Voucher 
 
@@ -98,12 +98,12 @@ https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltdf7d11c054ce
 
 
 PB
-https://images8.alphacoders.com/490/490182.jpg
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc4Fdud2C9UHEJ23nc0vg-Gfh-EtbwzKuQNw&usqp=CAU
 
 
 Play Station
-https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/PlayStation_logo.svg/2560px-PlayStation_logo.svg.png
+https://i.pinimg.com/736x/c1/cc/f0/c1ccf0200741362c0f5cc141279b21aa.jpg
 
 
 Roblox
-https://freeimage.host/i/JuBgbZg
+https://iili.io/JuBgbZg.png

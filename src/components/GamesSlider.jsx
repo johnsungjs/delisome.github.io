@@ -29,7 +29,7 @@ export default function GamesSlider() {
             slidesPerView={2.5}
             spaceBetween={10}
             centeredSlides={false}
-            loop={gamesData.length > 3 ? true : false}
+            loop={false}
           >
             {gamesData.map((data, index) => (
               <SwiperSlide key={index} className="rounded-2xl">

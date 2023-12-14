@@ -20,6 +20,10 @@ export default function Carousel() {
           centeredSlides={true}
           loop={true}
           slidesPerView={1.3}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           coverflowEffect={{
             rotate: 0,
             stretch: -15,

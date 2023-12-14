@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { Menu } from "@mui/icons-material";
 import SideNavbar from "./SideNavbar";
 import SearchInput from "./SearchInput";
+import SearchField2 from "./SearchField2";
 
 export default function TopNavbar() {
   const [showInput, setShowInput] = useState(false);
@@ -20,6 +21,7 @@ export default function TopNavbar() {
             <Menu fontSize="large" />
           </button>
           <p className="pl-2 text-xl">Delisome</p>
+          <SearchField2 />
 
           {/* <button
             className="self-end text-center"

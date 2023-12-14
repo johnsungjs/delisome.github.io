@@ -4,9 +4,9 @@
 //   increment,
 // } from "../../services/redux/features/counter/counterSlice";
 import GridItems from "../GridItems";
-import { dummyListGames } from "../../services/dummy/data-dummy/dataDummy";
+import { dummyListVouchers } from "../../services/dummy/data-dummy/dataDummy";
 
-const vouchers = dummyListGames;
+const vouchers = dummyListVouchers;
 
 export default function VoucherSection() {
   // const count = useSelector((state) => state.counter.value);

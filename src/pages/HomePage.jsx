@@ -8,7 +8,7 @@ export default function HomePage() {
 
   return (
     <>
-      <SearchField />
+      {/* <SearchField /> */}
       <BreadCrumbs section={section} setSection={setSection} />
       <SectionSelector section={section} />
     </>

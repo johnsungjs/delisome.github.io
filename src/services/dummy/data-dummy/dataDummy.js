@@ -31,45 +31,84 @@ export const dummyCarouselData = [
 
 export const dummyListGames = [
   {
-    name: "Fortnite",
+    name: "Valorant",
     discount: 20,
-    image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
-  },
-  {
-    name: "Mobile Legends Bang Bang",
-    discount: 20,
-    image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
+    image: "https://iili.io/JuBpELQ.png",
   },
   {
     name: "Mobile Legends",
     discount: 20,
-    image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
+    image: "https://i.ibb.co/kBjdVJy/Jepretan-Layar-2566-12-13-pukul-18-49-13.png",
   },
   {
-    name: "Pubg",
+    name: "Pubg Mobile",
     discount: 20,
-    image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
-  },
-  {
-    name: "Zeus",
-    discount: 20,
-    image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
+    image: "https://iili.io/JuBpzX4.png",
   },
   {
     name: "Genshin Impact",
     discount: 20,
-    image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
+    image: "https://iili.io/JuBsDwN.png",
+  },
+  {
+    name: "Freefire",
+    discount: 20,
+    image: "https://iili.io/JuBsHkQ.png",
+  },
+  {
+    name: "Roblox",
+    discount: 20,
+    image: "https://iili.io/JuBgbZg.png",
+  },
+  {
+    name: "Boss Domino",
+    discount: 20,
+    image: "https://iili.io/JuBiLIS.png",
+  },
+  {
+    name: "Honkai: Star Rail",
+    discount: 20,
+    image: "https://iili.io/JuBsDwN.png",
+  },
+  {
+    name: "Call of Duty",
+    discount: 20,
+    image: "https://i.ibb.co/prSycS8/Jepretan-Layar-2566-12-13-pukul-18-52-42.png",
+  },
+  {
+    name: "Metal Slug: Awakening",
+    discount: 20,
+    image: "https://iili.io/JuB6iFf.jpg",
+  },
+];
+
+export const dummyListVouchers = [
+  {
+    name: "Steam Wallet",
+    discount: 20,
+    image: "https://i.pinimg.com/1200x/11/e3/24/11e324f8f4f765eb4ce879f163ae68fd.jpg",
+  },
+  {
+    name: "Valorant",
+    discount: 20,
+    image: "https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/bltdf7d11c054ceb719/650f06ace7148996d4d39660/Valorant.png?width=850&auto=webp&quality=95&format=jpg&disable=upscale",
   },
   {
     name: "Point Blank",
     discount: 20,
-    image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc4Fdud2C9UHEJ23nc0vg-Gfh-EtbwzKuQNw&usqp=CAU",
   },
   {
-    name: "Crossfire",
+    name: "Playstation",
     discount: 20,
-    image: "https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F64950-Mobile%20Legends%20Moonton.png?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true",
+    image: "https://i.pinimg.com/736x/c1/cc/f0/c1ccf0200741362c0f5cc141279b21aa.jpg",
   },
+  {
+    name: "Roblox",
+    discount: 20,
+    image: "https://iili.io/JuBgbZg.png",
+  },
+
 ];
 
 export const dummyHistory = [
