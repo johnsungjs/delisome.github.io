@@ -14,6 +14,7 @@ import ProfileEditPage from './pages/ProfileEditPage';
 import DetailItemPage from './pages/DetailItemPage';
 import SearchPage from './pages/SearchPage';
 import RecentViewedPage from './pages/RecentViewedPage';
+import CheckoutPage from './pages/CheckoutPage';
 
 function App() {
   const router = createBrowserRouter(
@@ -36,6 +37,7 @@ function App() {
           <Route path='/detail-item' element={<DetailItemPage />} />
           <Route path='/search' element={<SearchPage />} />
           <Route path='/recent-viewed' element={<RecentViewedPage />} />
+          <Route path='/checkout' element={<CheckoutPage />} />
         </Route>
       </>
     )

@@ -32,7 +32,7 @@ https://iili.io/JuBODqN.png
 
 
 Gambar PUBG
-https://iili.io/JuByeS9.png
+https://iili.io/JuBpzX4.png
 
 
 Gambar Fortnite

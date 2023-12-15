@@ -543,6 +543,22 @@ export const dummyItemBuy2Backup = {
 };
 
 
+export const dummyArticles = [
+  {
+    name: "PS6 Mengeluarkan Seri Terbaru di 2024!", 
+    image: "https://i.pinimg.com/736x/c1/cc/f0/c1ccf0200741362c0f5cc141279b21aa.jpg",
+  },
+  {
+    name: "Mobile Legend akan dibeli Tik Tok!", 
+    image: "https://i.ibb.co/kBjdVJy/Jepretan-Layar-2566-12-13-pukul-18-49-13.png",
+  },
+  {
+    name: "Pubg Mobile Versi 2 sedang dalam tahap pengembangan", 
+    image: "https://iili.io/JuBpzX4.png",
+  },
+]
+
+
 
 // CASE: buat menu payment method
 // flow: klik metode pembayaran -> pilih jenis metode -> pilih penyedia jasa

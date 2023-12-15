@@ -7,15 +7,15 @@ import {
   setServer,
   setWhatsAppNumber,
   setPromoCode,
-  setFormCheckoutValueToInitialState,
 } from "../services/redux/features/form/formCheckoutSlice";
 import ModalItemBuy from "../components/modal/ModalItemBuy";
 import { dummyItemBuy2 } from "../services/dummy/data-dummy/dataDummy";
 import SimpleLayout from "../components/layouts/SimpleLayout";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { saveHistoryToLocalStorage } from "../services/universal-functions/universalFunctions";
 
 export default function DetailItemPage() {
+  const navigate = useNavigate();
   const location = useLocation();
   const dispatch = useDispatch();
 
@@ -48,8 +48,7 @@ export default function DetailItemPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(setFormCheckoutValueToInitialState());
-    console.log("ini data form", formCheckoutValue);
+    navigate("/checkout")
   };
 
   return (

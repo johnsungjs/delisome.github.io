@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 
-import { EffectCoverflow } from "swiper/modules";
+import { EffectCoverflow, Autoplay } from "swiper/modules";
 
 import { dummyCarouselData } from "../services/dummy/data-dummy/dataDummy";
 import { useNavigate } from "react-router-dom";
@@ -21,19 +21,18 @@ export default function Carousel() {
           grabCursor={true}
           centeredSlides={true}
           loop={true}
-          slidesPerView={1.3}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
+          slidesPerView={window.innerWidth > 690 ? 1 : 1.3}
+          autoplay= {{
+            delay: 3000,
           }}
           coverflowEffect={{
             rotate: 0,
             stretch: -15,
-            depth: 100,
+            depth: window.innerWidth > 690 ? 0 : 100,
             modifier: 2.5,
             slideShadows: true,
           }}
-          modules={[EffectCoverflow]}
+          modules={[Autoplay, EffectCoverflow]}
         >
           {carouselData.map((data, index) => (
             <SwiperSlide key={index} className="rounded-2xl">
