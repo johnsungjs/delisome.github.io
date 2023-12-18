@@ -1,6 +1,5 @@
 {
-  "homepage": "http://johnsungjs.github.io/delisome.github.io",
-  "name": "delisome-front",
+  "name": "delisome-web-demo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
