@@ -81,7 +81,7 @@ export default function ModalPaymentMethod({ setIsOpen }) {
                   >
                     <img
                       alt={data.name}
-                      src={data.image}
+                      src={`../assets/logo-bank/${data.image}.png`}
                       className="w-[40px] h-[40px] rounded-lg object-cover"
                     />
                     <p className="pl-2">{data.name}</p>

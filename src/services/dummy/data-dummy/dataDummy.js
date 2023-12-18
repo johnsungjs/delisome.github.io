@@ -215,52 +215,52 @@ export const dummyPaymentMethod = [
     name: "Virtual Account",
     image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
     children: [
-      { name: "VA BCA", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-      { name: "Mandiri", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-      { name: "BRI", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-      { name: "BNI", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-      { name: "Permata", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-      { name: "CIMB", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-      { name: "Danamon", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-      { name: "VA Neo Commerce", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-      { name: "BSI", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-      { name: "BJB", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" }
+      { name: "VA BCA", image: "bank-bca" },
+      { name: "Mandiri", image: "bank-mandiri" },
+      { name: "BRI", image: "bank-bri" },
+      { name: "BNI", image: "bank-bni" },
+      { name: "Permata", image: "bank-permata" },
+      { name: "CIMB", image: "bank-cimb" },
+      { name: "Danamon", image: "bank-danamon" },
+      { name: "VA Neo Commerce", image: "bank-neo" },
+      { name: "BSI", image: "bank-bsi" },
+      { name: "BJB", image: "bank-bjb" }
     ]
   },
   {
     name: "Bank Transfer",
     image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
-    children: [{ name: "Bank Transfer BCA", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-    { name: "Mandiri", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-    { name: "BRI", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-    { name: "BNI", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-    { name: "Permata", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-    { name: "CIMB", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-    { name: "Danamon", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-    { name: "VA Neo Commerce", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-    { name: "BSI", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-    { name: "BJB", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" }]
+    children: [{ name: "Bank Transfer BCA", image: "bank-bca" },
+    { name: "Mandiri", image: "bank-mandiri" },
+    { name: "BRI", image: "bank-bri" },
+    { name: "BNI", image: "bank-bni" },
+    { name: "Permata", image: "bank-permata" },
+    { name: "CIMB", image: "bank-cimb" },
+    { name: "Danamon", image: "bank-danamon" },
+    { name: "VA Neo Commerce", image: "bank-neo" },
+    { name: "BSI", image: "bank-bsi" },
+    { name: "BJB", image: "bank-bjb" }]
   },
   {
     name: "Kartu Kredit",
     image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
-    children: [{ name: "CC BCA", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-    { name: "Mandiri", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-    { name: "BRI", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-    { name: "BNI", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-    { name: "Permata", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-    { name: "CIMB", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-    { name: "Danamon", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-    { name: "VA Neo Commerce", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-    { name: "BSI", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-    { name: "BJB", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" }]
+    children: [{ name: "CC BCA", image: "bank-bca" },
+    { name: "Mandiri", image: "bank-mandiri" },
+    { name: "BRI", image: "bank-bri" },
+    { name: "BNI", image: "bank-bni" },
+    { name: "Permata", image: "bank-permata" },
+    { name: "CIMB", image: "bank-cimb" },
+    { name: "Danamon", image: "bank-danamon" },
+    { name: "VA Neo Commerce", image: "bank-neo" },
+    { name: "BSI", image: "bank-bsi" },
+    { name: "BJB", image: "bank-bjb" }]
   },
   {
     name: "Gerai",
     image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
     children: [
-      { name: "Indomaret", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" },
-      { name: "Alfamart", image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg" }
+      { name: "Indomaret", image: "indomaret" },
+      { name: "Alfamart", image: "alfamart" }
     ]
   },
 ];
