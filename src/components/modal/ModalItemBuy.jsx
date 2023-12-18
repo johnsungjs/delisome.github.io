@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import {
   resetItemBuy,
 } from "../../services/redux/features/form/formCheckoutSlice";
-import ModalItemBuyDetail from "./ModalItemBuyDetail";
+// import ModalItemBuyDetail from "./ModalItemBuyDetail";
 import ModalItemBuyDetail2 from "./ModalItemBuyDetail2";
 
 // modified from source: https://dev.to/franciscomendes10866/how-to-create-a-modal-in-react-3coc
