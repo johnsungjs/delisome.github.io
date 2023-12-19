@@ -16,7 +16,7 @@ export default function GamesSlider() {
         <div className="px-4 pb-2 flex justify-between items-center">
           <p className="font-bold text-lg">Recently Viewed</p>
           <button
-            className="px-4 py-2 bg-transparent border border-tertiary text-sm text-purple-200 rounded-xl"
+            className="hidden px-4 py-2 bg-transparent border border-tertiary text-sm text-purple-200 rounded-xl"
             onClick={() => navigate("/recent-viewed")}
           >
             See More
@@ -40,15 +40,15 @@ export default function GamesSlider() {
                   <img
                     src={data.image}
                     alt="yes"
-                    className="w-full h-full rounded-2xl object-cover"
+                    className="w-full h-[80%] rounded-2xl object-cover"
                   />
-                  <div className="absolute bottom-4 left-4">
-                    <p className="text-white text-md font-bold">{data.name}</p>
-                    {data.discount && (
-                      <button className="bg-tertiary px-2 py-1 border border-tertiary text-sm text-white rounded-xl">
+                  {data.discount && (
+                      <button className="absolute top-0 right-[4px] bg-[#E43232] px-4 py-1 text-sm text-white rounded-tr-[10px] rounded-bl-[30px] font-semibold">
                         - {data.discount}%
                       </button>
                     )}
+                  <div className="h-[20%] pt-2 text-center">
+                    <p className="text-white text-md font-bold">{data.name}</p>
                   </div>
                 </div>
               </SwiperSlide>

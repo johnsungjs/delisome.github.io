@@ -14,10 +14,10 @@ export default function CheckoutPage() {
     <>
       <SimpleLayout text={"Checkout"}>
         <div className="w-full h-full px-6 py-8">
-          <div className="mx-auto bg-white w-full h-full overflow-scroll text-black">
-            <img alt="logo" src={logo} className="mx-auto w-[90px] h-[90px]" />
-            <h2 className="text-center text-2xl font-bold">Order Summary</h2>
-            <div className="mt-4 mx-4 px-6 border-black">
+          <div className="mx-auto px-2 py-2 bg-white w-full h-full overflow-scroll text-black rounded-xl">
+            <img alt="logo" src={logo} className="mx-auto mt-6 w-[90px] h-[90px]" />
+            <h2 className="pt-2 text-center text-2xl font-bold">Order Summary</h2>
+            <div className="mt-4 px-6 border-black">
               <div className="flex justify-between">
                 <p>Nama</p>
                 <p>John Sung</p>
@@ -35,7 +35,7 @@ export default function CheckoutPage() {
                 <p>MLBB 10 Diamond</p>
               </div>
             </div>
-            <div className="mt-4 border-2 border-dashed bg-abuMuda bg-opacity-20 mx-4 px-6 py-4 border-black rounded-xl">
+            <div className="mt-4 border-2 border-dashed bg-abuMuda bg-opacity-20 mx-2 px-4 py-4 border-black rounded-xl">
               <div className="flex justify-between">
                 <p>Nama</p>
                 <p>John Sung</p>
@@ -53,7 +53,7 @@ export default function CheckoutPage() {
                 <p>MLBB 10 Diamond</p>
               </div>
             </div>
-            <div className="w-full px-4 pt-4">
+            <div className="w-full px-4 pt-6">
               <button className="block w-full px-2 py-2 bg-tertiary text-white rounded-xl">
                 BAYAR
               </button>
