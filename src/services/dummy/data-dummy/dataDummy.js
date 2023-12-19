@@ -188,27 +188,27 @@ export const dummyHistory = [
 export const dummyPaymentMethod = [
   {
     name: "Deli-Wallet",
-    image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+    image: "pos-indonesia",
     children: []
   },
   {
     name: "Dana",
-    image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+    image: "dana",
     children: []
   },
   {
     name: "OVO",
-    image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+    image: "ovo",
     children: []
   },
   {
     name: "Shopee Pay",
-    image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+    image: "shopeepay",
     children: []
   },
   {
     name: "Gopay",
-    image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+    image: "gopay",
     children: []
   },
   {

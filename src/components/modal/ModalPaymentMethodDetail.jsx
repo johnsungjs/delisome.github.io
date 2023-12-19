@@ -57,8 +57,8 @@ export default function ModalPaymentMethodDetail({
               >
                 <img
                   alt={data.name}
-                  src={data.image}
-                  className="w-[40px] h-[40px] rounded-lg object-cover"
+                  src={`assets/logo-bank/${data.image}.png`}
+                  className="w-[40px] h-[40px] rounded-lg object-contain"
                 />
                 <p className="pl-2">{data.name}</p>
               </div>
