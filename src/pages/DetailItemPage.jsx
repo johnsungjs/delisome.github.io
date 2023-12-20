@@ -61,7 +61,7 @@ export default function DetailItemPage() {
         <img
           alt={location.state.name || "No Name"}
           src={location.state.image || ""}
-          className="absolute w-full h-[220px] top-6 -z-10 opacity-30 object-cover"
+          className="absolute w-full max-w-4xl h-[220px] top-6 -z-10 opacity-30 object-cover"
         />
         {/* FORM STARTS */}
         <div className="pt-40">

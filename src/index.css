@@ -21,6 +21,7 @@ code {
     monospace;
 }
 
+/* FOR SCROLLBAR */
 ::-webkit-scrollbar {
   width: 0px;
   height: 0px;
@@ -33,7 +34,20 @@ code {
   border-radius: 50px;
 }
 
-/* starts here */
+
+/* FOR INPUT TYPE NUMBER */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+/* CSS FOR SWIPER */
 .swiper-slide-shadow-coverflow {
   background-image: none !important;
   background-color: transparent !important;
@@ -46,3 +60,5 @@ code {
 .swiper-slide-fully-visible .carousel {
   @apply shadow-md shadow-purple-800 md:shadow-none;
 }
+
+/* ANOTHER CSS */

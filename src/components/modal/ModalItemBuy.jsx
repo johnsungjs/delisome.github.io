@@ -22,7 +22,7 @@ export default function ModalItemBuy({ setIsOpen, parentData }) {
     <>
       {/* DARK BG STARTS */}
       <div
-        className="fixed z-[9999] bg-black opacity-50 w-screen h-screen top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        className="fixed z-[9999] bg-black opacity-50 w-screen max-w-4xl h-screen top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
         onClick={() => {
           // setIsOpen(false);
           // setShowDetailModal(!showDetailModal);
@@ -33,7 +33,7 @@ export default function ModalItemBuy({ setIsOpen, parentData }) {
       {/* MAIN MODAL STARTS */}
       <div className="fixed z-[9999] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black">
         <div
-          className={`w-[90vw] h-auto bg-white rounded-2xl shadow-xl overflow-hidden ${
+          className={`w-[90vw] max-w-4xl h-auto bg-white rounded-2xl shadow-xl overflow-hidden ${
             showDetailModal ? "hidden" : ""
           }`}
         >

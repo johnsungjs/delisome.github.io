@@ -1,20 +1,18 @@
 import React from "react";
 import SimpleLayout from "../components/layouts/SimpleLayout";
-// import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import logo from "../assets/delisome-logo.jpeg";
 
 export default function CheckoutPage() {
-  // const dispatch = useDispatch();
-
-  // const formCheckoutValue = useSelector(
-  //   (state) => state.formCheckout.formCheckoutValue
-  // );
+  const formCheckoutValue = useSelector(
+    (state) => state.formCheckout.formCheckoutValue
+  );
 
   return (
     <>
       <SimpleLayout text={"Checkout"}>
         <div className="w-full h-full px-6 py-8">
-          <div className="mx-auto px-2 py-2 bg-white w-full h-full overflow-scroll text-black rounded-xl">
+          <div className="mx-auto px-2 py-2 bg-white w-full h-full overflow-scroll text-black rounded-xl font-semibold">
             <img alt="logo" src={logo} className="mx-auto mt-6 w-[90px] h-[90px]" />
             <h2 className="pt-2 text-center text-2xl font-bold">Order Summary</h2>
             <div className="mt-4 px-6 border-black">
@@ -28,32 +26,34 @@ export default function CheckoutPage() {
               </div>
               <div className="flex justify-between">
                 <p>ID Game</p>
-                <p>ID123</p>
+                <p>{formCheckoutValue.idGame || ""}</p>
               </div>
               <div className="flex justify-between">
                 <p>Nama Item</p>
-                <p>MLBB 10 Diamond</p>
+                <p>{formCheckoutValue.itemBuy.type || ""}</p>
               </div>
             </div>
             <div className="mt-4 border-2 border-dashed bg-abuMuda bg-opacity-20 mx-2 px-4 py-4 border-black rounded-xl">
               <div className="flex justify-between">
-                <p>Nama</p>
-                <p>John Sung</p>
+                <p>Metode Pembayaran</p>
+                <p>{formCheckoutValue.payment.method || ""} - {formCheckoutValue.payment.channel || ""}</p>
+              </div>
+              <div className="my-4 w-full border-[1px] border-gray-400"/>
+              <div className="flex justify-between">
+                <p>{formCheckoutValue.itemBuy.type || ""}</p>
+                <p>Rp.{formCheckoutValue.itemBuy.nominal.toString() || ""}</p>
               </div>
               <div className="flex justify-between">
-                <p>Email</p>
-                <p>johnsungjs@gmail.com</p>
+                <p>Biaya Admin</p>
+                <p>Rp.2000</p>
               </div>
+              <div className="my-4 w-full border-[1px] border-gray-400"/>
               <div className="flex justify-between">
-                <p>ID Game</p>
-                <p>ID123</p>
-              </div>
-              <div className="flex justify-between">
-                <p>Nama Item</p>
-                <p>MLBB 10 Diamond</p>
+                <p>Total Pembayaran</p>
+                <p>Rp.2000</p>
               </div>
             </div>
-            <div className="w-full px-4 pt-6">
+            <div className="w-full px-4 pt-6 pb-6">
               <button className="block w-full px-2 py-2 bg-tertiary text-white rounded-xl">
                 BAYAR
               </button>

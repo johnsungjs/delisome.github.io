@@ -24,7 +24,7 @@ export default function ModalPaymentMethodDetail({
       {/* MAIN MODAL STARTS */}
       <div className="fixed z-[9999] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-black">
         <div
-          className={`w-[90vw] h-auto bg-white rounded-2xl shadow-xl overflow-hidden`}
+          className={`w-[90vw] max-w-4xl h-auto bg-white rounded-2xl shadow-xl overflow-hidden`}
         >
           <div className="flex items-center justify-between px-4 py-4 bg-white overflow-hidden rounded-t-2xl font-semibold border-b-2">
             <button
