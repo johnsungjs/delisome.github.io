@@ -9,7 +9,7 @@ export default function LoginPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // console.log(e.target[1].value);
-    localStorage.setItem("recentViewed", [])
+    // localStorage.setItem("recentViewed", [])
     navigate("/home");
   };
 
