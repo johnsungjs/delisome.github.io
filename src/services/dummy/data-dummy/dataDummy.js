@@ -48,7 +48,7 @@ export const dummyListGames = [
   {
     name: "Genshin Impact",
     discount: 20,
-    image: "https://iili.io/JuBsDwN.png",
+    image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0f1e5aad-05cf-4342-a2a3-6385559563dc/de8hzqj-45443592-d7d8-4a12-bed7-663747aa5d0c.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzBmMWU1YWFkLTA1Y2YtNDM0Mi1hMmEzLTYzODU1NTk1NjNkY1wvZGU4aHpxai00NTQ0MzU5Mi1kN2Q4LTRhMTItYmVkNy02NjM3NDdhYTVkMGMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.yZASIXfhf58g6J0TuMTlLFF7fmyCZf-XDWYoYaqm-kI",
   },
   {
     name: "Freefire",
@@ -78,7 +78,7 @@ export const dummyListGames = [
   {
     name: "Metal Slug: Awakening",
     discount: 20,
-    image: "https://iili.io/JuB6iFf.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRueDid9LykROKkRnCufN9KOBiNcrI9q70MQ&usqp=CAU",
   },
 ];
 

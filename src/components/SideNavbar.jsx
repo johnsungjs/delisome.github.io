@@ -66,12 +66,12 @@ export default function SideNavbar({ showSideNavbar, setShowSideNavbar }) {
               </div>
               <div
                 className={`pl-8 py-1 flex items-center gap-2 cursor-pointer hover:bg-gray-400 ${
-                  location.pathname === "/transaction"
+                  location.pathname === "/history"
                     ? "font-bold text-white"
                     : "text-slate-400"
                 }`}
                 onClick={() => {
-                  navigate("/transaction");
+                  navigate("/history");
                   setShowSideNavbar(false);
                 }}
               >

@@ -38,7 +38,7 @@ export default function LoginPage() {
                 className="border-b-2 ml-4 w-full px-4 py-2 bg-transparent outline-none text-white"
                 id="username"
                 autoComplete="on"
-                placeholder="silahkan masukkan email"
+                placeholder="Email"
               />
             </div>
             <div className="flex pt-8 items-center">
@@ -54,7 +54,7 @@ export default function LoginPage() {
                 className="underline text-sm cursor-pointer text-tertiary font-bold"
                 onClick={() => navigate("/register")}
               >
-                daftar disini
+                DAFTAR DISINI
               </p>
             </div>
           </div>
