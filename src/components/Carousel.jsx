@@ -19,6 +19,7 @@ export default function Carousel() {
         <Swiper
           effect={"coverflow"}
           grabCursor={true}
+          spaceBetween={10}
           centeredSlides={true}
           loop={true}
           slidesPerView={window.innerWidth > 690 ? 1 : 1.3}

@@ -54,11 +54,17 @@ input[type=number] {
 }
 
 .carousel {
-  @apply w-[100%] bg-abuMuda rounded-2xl p-2 m-2 md:m-0;
+  @apply w-[100%] bg-abuMuda rounded-2xl p-2 my-2 md:my-0;
 }
 
 .swiper-slide-fully-visible .carousel {
   @apply shadow-md shadow-purple-800 md:shadow-none;
+}
+
+
+/* CSS FOR CUSTOM ARTICLE */
+.custom-article > img {
+  @apply w-full h-[200px] object-contain;
 }
 
 /* ANOTHER CSS */

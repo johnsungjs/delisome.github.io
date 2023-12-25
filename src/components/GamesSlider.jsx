@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function GamesSlider() {
   const navigate = useNavigate();
+  
   const gamesData = JSON.parse(localStorage.getItem("recentViewed") || "[]");
   if (gamesData && gamesData.length > 0) {
     return (

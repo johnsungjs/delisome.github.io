@@ -1,7 +1,9 @@
 import React from "react";
 import { dummyArticles } from "../services/dummy/data-dummy/dataDummy";
+import { useNavigate } from "react-router-dom";
 
 export default function Articles() {
+  const navigate = useNavigate();
   const articleData = dummyArticles;
 
   return (
@@ -11,7 +13,7 @@ export default function Articles() {
         {articleData &&
           articleData.map((article, index) => (
             <div key={index}>
-              <div className="pt-4 pb-4 flex items-center" onClick={() => {}}>
+              <div className="pt-4 pb-4 flex items-center" onClick={() => navigate("/article")}>
                 <img
                   alt={"test article"}
                   src={article.image}

@@ -13,7 +13,7 @@ export default function TopNavbar() {
   return (
     <>
       {/* SECTION TOP NAVBAR START*/}
-      <div className="bg-primary w-full max-w-4xl h-12 fixed top-0 z-20 px-4 py-2 ">
+      <div className="bg-primary w-full max-w-4xl h-12 fixed top-0 z-20 px-4 py-2 outline-none">
         <div className="flex items-center">
           <button
             onClick={() => setShowSideNavbar(!showSideNavbar)}
