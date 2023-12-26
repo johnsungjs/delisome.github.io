@@ -32,7 +32,7 @@ export default function ArticlePage() {
           <img
             alt={"test pic"}
             src={"https://iili.io/JuBODqN.png"}
-            className="border-2 border-red-500 w-full h-[260px] top-0 -z-10 opacity-30 object-cover"
+            className="w-full h-[260px] top-0 -z-10 opacity-30 object-cover"
           />
           <div className="p-4 w-full min-h-full bg-white rounded-t-[30px] text-black">
             {/* TAG STARTS HERE */}

@@ -543,61 +543,49 @@ export const dummyItemBuy2Backup = {
 };
 
 
+//ini dummy untuk article suggestion yg ada di home screen
 export const dummyArticles = [
   {
-    name: "PS6 Mengeluarkan Seri Terbaru di 2024!", 
+    name: "PS6 Mengeluarkan Seri Terbaru di 2024!",
     image: "https://i.pinimg.com/736x/c1/cc/f0/c1ccf0200741362c0f5cc141279b21aa.jpg",
   },
   {
-    name: "Mobile Legend akan dibeli Tik Tok!", 
+    name: "Mobile Legend akan dibeli Tik Tok!",
     image: "https://i.ibb.co/kBjdVJy/Jepretan-Layar-2566-12-13-pukul-18-49-13.png",
   },
   {
-    name: "Pubg Mobile Versi 2 sedang dalam tahap pengembangan", 
+    name: "Pubg Mobile Versi 2 sedang dalam tahap pengembangan",
     image: "https://iili.io/JuBpzX4.png",
   },
-]
+];
+
+//ini dummy data article di page detail article
+export const dummyArticlePageData = {
+  title: "Karakter Dr. Ratio Honkai Star Rail Gratis dari MiHoyo",
+  authorData: {
+    name: "John Sung",
+    datePost: "25 Desember 2023",
+    image: "", //link image avatar
+  },
+  bodyParagraph: "", //ini nampung string HTML
+  articleSuggestion: [//ini isinya suggestion article 3 item random aja
+    {
+      title: "10 Game Trending Saat Ini yang Populer Di Steam",
+      datePost: "2 hari yang lalu",
+      image: ""
+    },
+    {
+      title: "5 Hero Terkuat Mobile Legend",
+      datePost: "2 hari yang lalu",
+      image: ""
+    },
+    {
+      title: "5 Tanda kamu sudah kebanyakan main game",
+      datePost: "2 hari yang lalu",
+      image: ""
+    },
+  ]
+}
 
 
 
-// CASE: buat menu payment method
-// flow: klik metode pembayaran -> pilih jenis metode -> pilih penyedia jasa
-// example: klik metode pembayaran -> klik bank transfer -> klik bca
-
-// struktur yang dibutuhkan menjadi begini:
-// [
-//   {
-//     id: "1",
-//     name: "Bank Transfer",
-//     image: "image.jpg",
-//     children: [
-//       {
-//         id:"x",
-//         name: "BCA",
-//         image: "image.jpg",
-//       },
-//       {
-//         id:"x",
-//         name: "Mandiri",
-//         image: "image.jpg",
-//       }
-//     ]
-//   },
-//   {
-//     id: "2",
-//     name: "E-Wallet",
-//     image: "image.jpg",
-//     children:[
-//       {
-//         id:"x",
-//         name: "OVO",
-//         image: "image.jpg",
-//       },
-//       {
-//         id:"x",
-//         name: "GOPAY",
-//         image: "image.jpg",
-//       }
-//     ]
-//   }
-// ]
