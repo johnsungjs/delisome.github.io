@@ -1,16 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Avatar, IconButton } from "@mui/material";
 import { ArrowBack } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 
 export default function ArticlePage() {
   const navigate = useNavigate();
+  const [navbar, setNavbar] = useState(false);
+
+  const changeNavbar = () => {
+    if (window.scrollY >= 260) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNavbar);
+    return () => window.removeEventListener("scroll", changeNavbar);
+  }, []);
 
   return (
     <>
       <div className="container max-w-4xl">
-        <div className="w-full max-w-4xl border-2 fixed top-0 z-0">
-          <IconButton className={`!text-black`} onClick={() => navigate(-1)}>
+        <div className={`w-full max-w-4xl fixed top-0 z-0 ${navbar ? "bg-white" : "bg-transparent"}`}>
+          <IconButton sx={{color: `${navbar ? "black" : "white"}`}} onClick={() => navigate(-1)}>
             <ArrowBack />
           </IconButton>
         </div>
@@ -18,7 +32,7 @@ export default function ArticlePage() {
           <img
             alt={"test pic"}
             src={"https://iili.io/JuBODqN.png"}
-            className="border-2 border-red-500 w-full h-1/3 max-h-[260px] top-0 -z-10 opacity-30 object-cover"
+            className="border-2 border-red-500 w-full h-[260px] top-0 -z-10 opacity-30 object-cover"
           />
           <div className="p-4 w-full min-h-full bg-white rounded-t-[30px] text-black">
             {/* TAG STARTS HERE */}
@@ -84,7 +98,9 @@ export default function ArticlePage() {
             {/* SHARE ENDS HERE */}
             {/* ARTIKEL TERKAIT STARTS HERE */}
             <div className="pt-4">
-              <h2 className="pb-2 text-lg font-semibold">Artikel Lainnya ...</h2>
+              <h2 className="pb-2 text-lg font-semibold">
+                Artikel Lainnya ...
+              </h2>
               <div className="flex pb-2 items-center gap-2">
                 <img
                   alt={"test pic3"}
@@ -92,7 +108,9 @@ export default function ArticlePage() {
                   className="w-1/3 min-h-[84px] rounded-xl"
                 />
                 <div className="w-2/3">
-                  <p className="font-bold text-sm">10 Game Trending Saat Ini yang Populer Di Steam</p>
+                  <p className="font-bold text-sm">
+                    10 Game Trending Saat Ini yang Populer Di Steam
+                  </p>
                   <p className="text-xs text-gray-500">2 hari yang lalu</p>
                 </div>
               </div>
@@ -103,7 +121,9 @@ export default function ArticlePage() {
                   className="w-1/3 min-h-[84px] rounded-xl"
                 />
                 <div className="w-2/3">
-                  <p className="font-bold text-sm">10 Game Trending Saat Ini yang Populer Di Steam</p>
+                  <p className="font-bold text-sm">
+                    10 Game Trending Saat Ini yang Populer Di Steam
+                  </p>
                   <p className="text-xs text-gray-500">2 hari yang lalu</p>
                 </div>
               </div>
@@ -114,7 +134,9 @@ export default function ArticlePage() {
                   className="w-1/3 min-h-[84px] rounded-xl"
                 />
                 <div className="w-2/3">
-                  <p className="font-bold text-sm">10 Game Trending Saat Ini yang Populer Di Steam</p>
+                  <p className="font-bold text-sm">
+                    10 Game Trending Saat Ini yang Populer Di Steam
+                  </p>
                   <p className="text-xs text-gray-500">2 hari yang lalu</p>
                 </div>
               </div>

@@ -107,3 +107,34 @@ https://i.pinimg.com/736x/c1/cc/f0/c1ccf0200741362c0f5cc141279b21aa.jpg
 
 Roblox
 https://iili.io/JuBgbZg.png
+
+
+
+========================================================================================
+Revisi Logo
+
+Roblox
+https://freeimage.host/i/JArrXHb
+
+Metal Slug
+https://freeimage.host/i/JAr65Zl
+
+Honkai
+https://freeimage.host/i/JAr6Vuj
+
+Logo sosmed share
+https://drive.google.com/file/d/18J3cS4IKghhvLXAyqW9A9wKEpeB1Vb1e/view?usp=sharing
+
+Artikel
+
+Gambar 1
+https://freeimage.host/i/JAriWBV
+
+Gambar 2
+https://freeimage.host/i/JAriNYF
+
+Gambar 3
+https://freeimage.host/i/JArivTJ
+
+Gambar 4
+https://freeimage.host/i/JAri8hv
