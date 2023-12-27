@@ -16,6 +16,7 @@ export default function ArticlePage() {
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     window.addEventListener("scroll", changeNavbar);
     return () => window.removeEventListener("scroll", changeNavbar);
   }, []);
@@ -23,8 +24,15 @@ export default function ArticlePage() {
   return (
     <>
       <div className="container max-w-4xl">
-        <div className={`w-full max-w-4xl fixed top-0 z-0 ${navbar ? "bg-white" : "bg-transparent"}`}>
-          <IconButton sx={{color: `${navbar ? "black" : "white"}`}} onClick={() => navigate(-1)}>
+        <div
+          className={`w-full max-w-4xl fixed top-0 z-0 ${
+            navbar ? "bg-white" : "bg-transparent"
+          }`}
+        >
+          <IconButton
+            sx={{ color: `${navbar ? "black" : "white"}` }}
+            onClick={() => navigate(-1)}
+          >
             <ArrowBack />
           </IconButton>
         </div>

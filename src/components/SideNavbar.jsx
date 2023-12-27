@@ -51,7 +51,7 @@ export default function SideNavbar({ showSideNavbar, setShowSideNavbar }) {
             {/* BUTTON ITEMS SIDEBAR STARTS */}
             <div className=" bg-abuMuda h-full pt-16 rounded-tr-[40px]">
               <div
-                className={`pl-8 py-1 flex items-center gap-2 cursor-pointer hover:bg-gray-400 ${
+                className={`pl-8 py-1 flex items-center gap-2 cursor-pointer hover:font-bold ${
                   location.pathname === "/home"
                     ? "font-bold text-white"
                     : "text-slate-400"
@@ -65,7 +65,7 @@ export default function SideNavbar({ showSideNavbar, setShowSideNavbar }) {
                 <p className="text-lg">Home</p>
               </div>
               <div
-                className={`pl-8 py-1 flex items-center gap-2 cursor-pointer hover:bg-gray-400 ${
+                className={`pl-8 py-1 flex items-center gap-2 cursor-pointer hover:font-bold ${
                   location.pathname === "/history"
                     ? "font-bold text-white"
                     : "text-slate-400"
@@ -79,7 +79,7 @@ export default function SideNavbar({ showSideNavbar, setShowSideNavbar }) {
                 <p className="text-lg">Transaksi</p>
               </div>
               <div
-                className={`pl-8 py-1 flex items-center gap-2 cursor-pointer hover:bg-gray-400 ${
+                className={`pl-8 py-1 flex items-center gap-2 cursor-pointer hover:font-bold ${
                   location.pathname === "/register"
                     ? "font-bold text-white"
                     : "text-slate-400"
@@ -93,7 +93,7 @@ export default function SideNavbar({ showSideNavbar, setShowSideNavbar }) {
                 <p className="text-lg">Register</p>
               </div>
               <div
-                className={`pl-8 py-1 flex items-center gap-2 cursor-pointer hover:bg-gray-400 ${
+                className={`pl-8 py-1 flex items-center gap-2 cursor-pointer hover:font-bold ${
                   location.pathname === "/contact-us"
                     ? "font-bold text-white"
                     : "text-slate-400"
@@ -107,7 +107,7 @@ export default function SideNavbar({ showSideNavbar, setShowSideNavbar }) {
                 <p className="text-lg">Contact Us</p>
               </div>
               <div
-                className={`absolute bottom-10 pl-8 py-1 flex items-center gap-2 cursor-pointer hover:bg-gray-400 ${
+                className={`absolute bottom-10 pl-8 py-1 flex items-center gap-2 cursor-pointer hover:font-bold ${
                   location.pathname === "/login"
                     ? "font-bold text-white"
                     : "text-slate-400"
