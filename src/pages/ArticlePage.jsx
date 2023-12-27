@@ -8,7 +8,7 @@ export default function ArticlePage() {
   const [navbar, setNavbar] = useState(false);
 
   const changeNavbar = () => {
-    if (window.scrollY >= 260) {
+    if (window.scrollY >= 240) {
       setNavbar(true);
     } else {
       setNavbar(false);
@@ -90,17 +90,37 @@ export default function ArticlePage() {
             {/* SETINNERDANGEROUSHTML ENDS HERE */}
             {/* SHARE STARTS HERE */}
             <div className="flex pt-4 text-white gap-2">
-              <button className="w-full py-1 bg-[#3B5795] rounded-lg">
-                Share
+              <button className="flex items-center justify-center gap-2 w-full py-1 bg-[#3B5795] rounded-lg">
+                <img
+                  alt="facebook"
+                  src="/assets/medsos/facebook.png"
+                  className="scale-125"
+                />
+                <p>Share</p>
               </button>
-              <button className="w-full py-1 bg-[#000000] rounded-lg">
-                Share
+              <button className="flex items-center justify-center gap-2 w-full py-1 bg-[#000000] rounded-lg">
+                <img
+                  alt="twitter"
+                  src="/assets/medsos/twitter.png"
+                  className="scale-125"
+                />
+                <p>Share</p>
               </button>
-              <button className="w-full py-1 bg-[#60D669] rounded-lg">
-                Share
+              <button className="flex items-center justify-center gap-2 w-full py-1 bg-[#60D669] rounded-lg">
+                <img
+                  alt="whatsapp"
+                  src="/assets/medsos/whatsapp.png"
+                  className="scale-150"
+                />
+                <p>Share</p>
               </button>
-              <button className="w-full py-1 bg-[#F9514A] rounded-lg">
-                Share
+              <button className="flex items-center justify-center gap-2 w-full py-1 bg-[#F9514A] rounded-lg">
+                <img
+                  alt="instagram"
+                  src="/assets/medsos/instagram.png"
+                  className="scale-150"
+                />
+                <p>Share</p>
               </button>
             </div>
             {/* SHARE ENDS HERE */}
