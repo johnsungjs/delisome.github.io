@@ -1,4 +1,4 @@
-import { Edit } from "@mui/icons-material";
+// import { Edit } from "@mui/icons-material";
 import { Avatar } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
@@ -26,7 +26,6 @@ export default function ProfilePage() {
           onClick={() => navigate("/profile-edit")}
         >
           <p className="inline pr-2">Edit Profile</p>
-          <Edit />
         </button>
       </div>
     </>

@@ -13,7 +13,7 @@ export default function Articles() {
         {articleData &&
           articleData.map((article, index) => (
             <div key={index}>
-              <div className="pt-4 pb-4 flex items-center" onClick={() => navigate("/article")}>
+              <div className="pt-4 pb-4 flex items-center cursor-pointer hover:opacity-90" onClick={() => navigate("/article")}>
                 <img
                   alt={"test article"}
                   src={article.image}

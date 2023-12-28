@@ -64,7 +64,7 @@ input[type=number] {
 
 /* CSS FOR CUSTOM ARTICLE */
 .custom-article > img {
-  @apply w-full h-[200px] object-contain;
+  @apply w-full my-2 h-[200px] object-contain;
 }
 
 /* ANOTHER CSS */
