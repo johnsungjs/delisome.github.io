@@ -138,3 +138,7 @@ https://freeimage.host/i/JArivTJ
 
 Gambar 4
 https://freeimage.host/i/JAri8hv
+
+
+GDRIVE
+https://drive.google.com/drive/folders/1ov4__L4YuTHZItiy0pe1RMgTa2UyQXty?usp=sharing

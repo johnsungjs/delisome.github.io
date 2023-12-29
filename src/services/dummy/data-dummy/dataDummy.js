@@ -58,7 +58,7 @@ export const dummyListGames = [
   {
     name: "Roblox",
     discount: 20,
-    image: "https://iili.io/JuBgbZg.png",
+    image: "https://iili.io/JArrXHb.png",
   },
   {
     name: "Boss Domino",
@@ -68,7 +68,7 @@ export const dummyListGames = [
   {
     name: "Honkai: Star Rail",
     discount: 20,
-    image: "https://iili.io/JuBsDwN.png",
+    image: "https://iili.io/JAr6Vuj.png",
   },
   {
     name: "Call of Duty",
@@ -78,7 +78,7 @@ export const dummyListGames = [
   {
     name: "Metal Slug: Awakening",
     discount: 20,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRueDid9LykROKkRnCufN9KOBiNcrI9q70MQ&usqp=CAU",
+    image: "https://iili.io/JAr65Zl.webp",
   },
 ];
 
@@ -106,7 +106,7 @@ export const dummyListVouchers = [
   {
     name: "Roblox",
     discount: 20,
-    image: "https://iili.io/JuBgbZg.png",
+    image: "https://iili.io/JArrXHb.png",
   },
 
 ];
