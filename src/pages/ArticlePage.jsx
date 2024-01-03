@@ -93,32 +93,32 @@ export default function ArticlePage() {
               <button className="flex items-center justify-center gap-2 w-full py-1 bg-[#3B5795] rounded-lg">
                 <img
                   alt="facebook"
-                  src="/assets/medsos/facebook.png"
-                  className="scale-125"
+                  src="/assets/medsos/facebook.svg"
+                  className="w-[20px]"
                 />
                 <p>Share</p>
               </button>
               <button className="flex items-center justify-center gap-2 w-full py-1 bg-[#000000] rounded-lg">
                 <img
                   alt="twitter"
-                  src="/assets/medsos/twitter.png"
-                  className="scale-125"
+                  src="/assets/medsos/twitter.svg"
+                  className="w-[20px]"
                 />
                 <p>Share</p>
               </button>
               <button className="flex items-center justify-center gap-2 w-full py-1 bg-[#60D669] rounded-lg">
                 <img
                   alt="whatsapp"
-                  src="/assets/medsos/whatsapp.png"
-                  className="scale-150"
+                  src="/assets/medsos/whatsapp.svg"
+                  className="w-[20px]"
                 />
                 <p>Share</p>
               </button>
               <button className="flex items-center justify-center gap-2 w-full py-1 bg-[#F9514A] rounded-lg">
                 <img
                   alt="instagram"
-                  src="/assets/medsos/instagram.png"
-                  className="scale-150"
+                  src="/assets/medsos/instagram.svg"
+                  className="w-[20px]"
                 />
                 <p>Share</p>
               </button>
