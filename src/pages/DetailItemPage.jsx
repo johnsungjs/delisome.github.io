@@ -13,6 +13,7 @@ import { dummyItemBuy2 } from "../services/dummy/data-dummy/dataDummy";
 import SimpleLayout from "../components/layouts/SimpleLayout";
 import { useLocation, useNavigate } from "react-router-dom";
 import { saveHistoryToLocalStorage } from "../services/universal-functions/universalFunctions";
+import TutorialTopup from "../components/TutorialTopup";
 
 export default function DetailItemPage() {
   const navigate = useNavigate();
@@ -48,7 +49,7 @@ export default function DetailItemPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate("/checkout")
+    navigate("/checkout");
   };
 
   return (
@@ -64,7 +65,8 @@ export default function DetailItemPage() {
           className="absolute w-full max-w-4xl h-[220px] top-6 -z-10 opacity-30 object-cover"
         />
         {/* FORM STARTS */}
-        <div className="pt-40">
+        <div className="pt-48">
+          <TutorialTopup />
           <form className="px-6 pb-10" onSubmit={handleSubmit}>
             {/* SECTION FIRST STARTS */}
             <div className="flex pt-4">
