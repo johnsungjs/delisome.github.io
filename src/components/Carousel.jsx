@@ -45,7 +45,7 @@ export default function Carousel() {
                   alt="yes"
                   className="rounded-2xl object-cover mx-auto w-full h-[140px] sm:h-[260px]"
                 />
-                <div className="absolute top-24 left-10">
+                <div className="absolute top-24 left-10 sm:top-8 sm:left-8">
                   <p className="text-red-300">{data.genre.toUpperCase()}</p>
                   <p className="text-white text-xl font-bold">{data.name}</p>
                 </div>

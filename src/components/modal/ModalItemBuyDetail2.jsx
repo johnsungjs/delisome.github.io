@@ -87,7 +87,7 @@ export default function ModalItemBuyDetail2({
                       <p className="px-4 py-2 text-lg text-tertiary font-bold">
                         {data.category}
                       </p>
-                      <div className="px-4 grid grid-cols-3 gap-2">
+                      <div className="px-4 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 xl:grid-cols-12 gap-2">
                         {data.children.map((item, index) => (
                           <div
                             key={index}

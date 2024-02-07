@@ -11,8 +11,8 @@ export default function DelisomeInfo() {
           <div className="text-[10px]">
             <p>Ruko Pasar Familymart Blok D No 1</p>
             <p>0895323939955</p>
-            <p>lalala@gmail.com</p>
-            <p>© 2024 Delisome. All rights reserved.</p>
+            <p>delisome@gmail.com</p>
+            <p className="pt-2">© 2024 Delisome. All rights reserved.</p>
           </div>
         </div>
       </div>

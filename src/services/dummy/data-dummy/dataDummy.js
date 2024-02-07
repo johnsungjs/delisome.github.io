@@ -376,24 +376,24 @@ export const dummyItemBuy2 = {
   children: [
     {
       name: "Packages",
-      image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+      image: "/assets/symbols/diamond.svg",
       viewStyle: "list",
       children: [
         {
           name: "Weekly Diamond Pass",
-          image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+          image: "/assets/symbols/diamond.svg",
           price: 30000
         },
         {
           name: "Twilight Pass",
-          image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+          image: "/assets/symbols/diamond.svg",
           price: 150000
         },
       ]
     },
     {
       name: "Top Up Diamonds",
-      image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+      image: "/assets/symbols/diamond.svg",
       viewStyle: "grid",
       children: [
         {
@@ -401,28 +401,28 @@ export const dummyItemBuy2 = {
           children: [
             {
               name: "5 Diamonds",
-              image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+              image: "/assets/symbols/diamond.svg",
               discount: 6,
               isPopular: true,
               price: 1350
             },
             {
               name: "44 Diamonds",
-              image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+              image: "/assets/symbols/diamond.svg",
               discount: 5,
               isPopular: false,
               price: 11200
             },
             {
               name: "170 Diamonds",
-              image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+              image: "/assets/symbols/diamond.svg",
               discount: 5,
               isPopular: true,
               price: 43200
             },
             {
               name: "296 Diamonds",
-              image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+              image: "/assets/symbols/diamond.svg",
               discount: 5,
               isPopular: true,
               price: 75000
@@ -434,28 +434,28 @@ export const dummyItemBuy2 = {
           children: [
             {
               name: "3 Diamonds",
-              image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+              image: "/assets/symbols/diamond.svg",
               discount: 10,
               isPopular: false,
               price: 1100
             },
             {
               name: "19 Diamonds",
-              image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+              image: "/assets/symbols/diamond.svg",
               discount: 5,
               isPopular: true,
               price: 5100
             },
             {
               name: "59 Diamonds",
-              image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+              image: "/assets/symbols/diamond.svg",
               discount: 5,
               isPopular: true,
               price: 14900
             },
             {
               name: "568 Diamonds",
-              image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+              image: "/assets/symbols/diamond.svg",
               discount: 5,
               isPopular: false,
               price: 141700
