@@ -2,6 +2,7 @@ import { ArrowBack, Close } from "@mui/icons-material";
 import { useDispatch } from "react-redux";
 import {
   resetItemBuy,
+  setItemBuyNominal,
   setItemBuyType,
 } from "../../services/redux/features/form/formCheckoutSlice";
 
@@ -47,6 +48,7 @@ export default function ModalItemBuyDetail2({
 
           <div className="max-h-[70vh] overflow-auto">
             {childrenData.viewStyle === "list" ? (
+              //VIEW LIST START
               childrenData.children &&
               childrenData.children.map((data, index) => (
                 <div
@@ -56,10 +58,11 @@ export default function ModalItemBuyDetail2({
                   } text-base text-black font-semibold`}
                   onClick={() => {
                     dispatch(setItemBuyType(data.name));
+                    dispatch(setItemBuyNominal(data.price));
                     setIsOpen(false);
                   }}
                 >
-                  <div>
+                  <div className="flex gap-2">
                     {data.image && (
                       <img
                         alt={data.name}
@@ -67,12 +70,17 @@ export default function ModalItemBuyDetail2({
                         className="w-[40px] h-[40px] rounded-lg object-cover inline"
                       />
                     )}
-                    <p className="pl-2 inline">{data.name}</p>
+                    <div>
+                      <p>{data.name}</p>
+                      <p>Rp.{data.price.toString()}</p>
+                    </div>
                   </div>
                 </div>
               ))
             ) : (
-              <div className="">
+              //VIEW LIST END
+              //VIEW GRID START
+              <div>
                 {childrenData.children &&
                   childrenData.children.map((data, index) => (
                     <div key={index}>
@@ -83,9 +91,10 @@ export default function ModalItemBuyDetail2({
                         {data.children.map((item, index) => (
                           <div
                             key={index}
-                            className="aspect-square shadow-2xl rounded-2xl"
+                            className="aspect-square shadow-2xl rounded-2xl text-xs text-center font-semibold"
                             onClick={() => {
                               dispatch(setItemBuyType(item.name));
+                              dispatch(setItemBuyNominal(item.price));
                               setIsOpen(false);
                             }}
                           >
@@ -94,15 +103,17 @@ export default function ModalItemBuyDetail2({
                               src={item.image}
                               className="w-full h-1/2 object-cover rounded-t-2xl"
                             />
-                            <p className="pt-1 text-xs text-center">
+                            <p className="pt-1 text-center">
                               {item.name}
                             </p>
+                            <p>Rp.{item.price.toString()}</p>
                           </div>
                         ))}
                       </div>
                     </div>
                   ))}
               </div>
+              //VIEW GRID END
             )}
           </div>
         </div>

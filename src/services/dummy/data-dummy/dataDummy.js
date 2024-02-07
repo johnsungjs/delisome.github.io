@@ -382,10 +382,12 @@ export const dummyItemBuy2 = {
         {
           name: "Weekly Diamond Pass",
           image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+          price: 30000
         },
         {
           name: "Twilight Pass",
           image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+          price: 150000
         },
       ]
     },
@@ -398,28 +400,32 @@ export const dummyItemBuy2 = {
           category: "Popular",
           children: [
             {
-              name: "10 Diamonds",
+              name: "5 Diamonds",
               image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
               discount: 6,
-              isPopular: true
+              isPopular: true,
+              price: 1350
             },
             {
-              name: "11 Diamonds",
+              name: "44 Diamonds",
               image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
               discount: 5,
-              isPopular: false
+              isPopular: false,
+              price: 11200
             },
             {
-              name: "12 Diamonds",
+              name: "170 Diamonds",
               image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
               discount: 5,
-              isPopular: true
+              isPopular: true,
+              price: 43200
             },
             {
-              name: "13 Diamonds",
+              name: "296 Diamonds",
               image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
               discount: 5,
-              isPopular: true
+              isPopular: true,
+              price: 75000
             },
           ]
         },
@@ -427,28 +433,32 @@ export const dummyItemBuy2 = {
           category: "More Diamonds",
           children: [
             {
-              name: "14 Diamonds",
+              name: "3 Diamonds",
               image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
               discount: 10,
-              isPopular: false
+              isPopular: false,
+              price: 1100
             },
             {
-              name: "15 Diamonds",
+              name: "19 Diamonds",
               image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
               discount: 5,
-              isPopular: true
+              isPopular: true,
+              price: 5100
             },
             {
-              name: "10 Diamonds",
+              name: "59 Diamonds",
               image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
               discount: 5,
-              isPopular: true
+              isPopular: true,
+              price: 14900
             },
             {
-              name: "10 Diamonds",
+              name: "568 Diamonds",
               image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
               discount: 5,
-              isPopular: false
+              isPopular: false,
+              price: 141700
             },
           ]
         }

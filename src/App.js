@@ -1,51 +1,9 @@
 import React from 'react';
-import HomePage from './pages/HomePage';
-import { Navigate, Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
-import PrivateRoutes from './services/PrivateRoutes';
-import Page404 from './pages/Page404';
-import LoginPage from './pages/LoginPage';
-import HistoryPage from './pages/HistoryPage';
-import ProfilePage from './pages/ProfilePage';
-import TransactionPage from './pages/TransactionPage';
-import AuthLayout from './components/AuthLayout';
-import RegisterPage from './pages/RegisterPage';
-import ContactUsPage from './pages/ContactUsPage';
-import ProfileEditPage from './pages/ProfileEditPage';
-import DetailItemPage from './pages/DetailItemPage';
-import SearchPage from './pages/SearchPage';
-import RecentViewedPage from './pages/RecentViewedPage';
-import CheckoutPage from './pages/CheckoutPage';
-import CheckoutPageStatus from './pages/CheckoutPageStatus';
-import ArticlePage from './pages/ArticlePage';
+import { RouterProvider } from 'react-router-dom';
+import { routerConfig } from './services/routerConfig';
 
 function App() {
-  const router = createBrowserRouter(
-    createRoutesFromElements(
-      <>
-        <Route path="*" element={<Page404 />} />
-        <Route path="/delisome.github.io" element={<LoginPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/register" element={<RegisterPage />} />
-        <Route path="/" redirect element={<Navigate to="/login" />} />
-        <Route element={<PrivateRoutes />}>
-          <Route element={<AuthLayout />}>
-            <Route path='/home' element={<HomePage />} />
-            <Route path='/history' element={<HistoryPage />} />
-            <Route path='/profile' element={<ProfilePage />} />
-            <Route path='/transaction' element={<TransactionPage />} />
-          </Route>
-          <Route path='/contact-us' element={<ContactUsPage />} />
-          <Route path='/profile-edit' element={<ProfileEditPage />} />
-          <Route path='/detail-item' element={<DetailItemPage />} />
-          <Route path='/search' element={<SearchPage />} />
-          <Route path='/recent-viewed' element={<RecentViewedPage />} />
-          <Route path='/checkout' element={<CheckoutPage />} />
-          <Route path='/checkout-status' element={<CheckoutPageStatus />} />
-          <Route path='/article' element={<ArticlePage />} />
-        </Route>
-      </>
-    )
-  );
+  const router = routerConfig;
   return (
     <RouterProvider router={router} />
   );
