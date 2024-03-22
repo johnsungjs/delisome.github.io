@@ -151,7 +151,8 @@ export default function DetailItemPage() {
                   {formCheckoutValue.payment.method} -{" "}
                   {formCheckoutValue.payment.channel}
                 </p>
-                <p className="ml-auto">Rp.0</p>
+                {/* UNCOMMENT LATER */}
+                {/* <p className="ml-auto">Rp.0</p> */}
               </div>
             </div>
             {/* SECTION FOURTH ENDS */}
@@ -166,7 +167,7 @@ export default function DetailItemPage() {
               <input
                 type="text"
                 name="promoCode"
-                placeholder="ini mungkin belum ada dulu"
+                placeholder="soon will be added"
                 className="w-full px-2 py-2 bg-transparent border border-white rounded-lg outline-none"
                 value={formCheckoutValue.promoCode}
                 onChange={(e) => dispatch(setPromoCode(e.target.value))}

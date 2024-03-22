@@ -42,6 +42,7 @@ export const formCheckoutSlice = createSlice({
       state.formCheckoutValue.payment.channel = action.payload;
     },
     setPaymentNominal: (state, action) => {
+      console.log("clicked", action.payload);
       state.formCheckoutValue.payment.nominal = action.payload;
     },
     resetPayment: (state) => {
@@ -68,6 +69,6 @@ export const formCheckoutSlice = createSlice({
   }
 });
 
-export const { setIdGame, setServer, setWhatsAppNumber, setPaymentMethod, setPaymentNominal, resetPayment, setPaymentChannel, setPromoCode, setItemBuyType, resetItemBuy, setFormCheckoutValueToInitialState } = formCheckoutSlice.actions;
+export const { setIdGame, setServer, setWhatsAppNumber, setPaymentMethod, setPaymentNominal, resetPayment, setPaymentChannel, setPromoCode, setItemBuyType, setItemBuyNominal, resetItemBuy, setFormCheckoutValueToInitialState } = formCheckoutSlice.actions;
 
 export default formCheckoutSlice.reducer;

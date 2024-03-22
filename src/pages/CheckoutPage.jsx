@@ -11,6 +11,9 @@ export default function CheckoutPage() {
     (state) => state.formCheckout.formCheckoutValue
   );
 
+  const adminFee = 2000;
+  const totalPayPrice = formCheckoutValue.itemBuy.nominal + adminFee;
+
   return (
     <>
       <SimpleLayout text={"Checkout"}>
@@ -62,12 +65,12 @@ export default function CheckoutPage() {
                 </div>
                 <div className="flex justify-between">
                   <p>Biaya Admin</p>
-                  <p className="text-end">Rp.2000</p>
+                  <p className="text-end">Rp.{adminFee}</p>
                 </div>
                 <div className="my-4 w-full border-[1px] border-gray-400" />
                 <div className="flex justify-between">
                   <p>Total Pembayaran</p>
-                  <p className="text-end">Rp.2000</p>
+                  <p className="text-end">Rp.{totalPayPrice}</p>
                 </div>
               </div>
               <div className="w-full px-4 pt-6 pb-6">

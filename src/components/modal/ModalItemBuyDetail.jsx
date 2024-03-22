@@ -47,6 +47,7 @@ export default function ModalItemBuyDetail({
 
           <div className="max-h-[70vh] overflow-auto">
             {childrenData.viewStyle === "list" ? (
+              //VIEW LIST START
               childrenData.children &&
               childrenData.children.map((data, index) => (
                 <div
@@ -72,6 +73,9 @@ export default function ModalItemBuyDetail({
                 </div>
               ))
             ) : (
+              // VIEW LIST END
+
+              // VIEW GRID START
               <div className="flex flex-wrap gap-4 items-center justify-center">
                 {childrenData.children &&
                   childrenData.children.map((data, index) => (
@@ -92,6 +96,7 @@ export default function ModalItemBuyDetail({
                     </div>
                   ))}
               </div>
+              //VIEW GRID END
             )}
           </div>
         </div>

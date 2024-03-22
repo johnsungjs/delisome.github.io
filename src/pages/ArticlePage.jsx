@@ -133,7 +133,7 @@ export default function ArticlePage() {
                 <img
                   alt={"test pic3"}
                   src={"https://iili.io/JuBODqN.png"}
-                  className="w-1/3 min-h-[84px] rounded-xl"
+                  className="w-[80px] h-[80px] rounded-xl"
                 />
                 <div className="w-2/3">
                   <p className="font-bold text-sm">
@@ -146,7 +146,7 @@ export default function ArticlePage() {
                 <img
                   alt={"test pic3"}
                   src={"https://iili.io/JuBODqN.png"}
-                  className="w-1/3 min-h-[84px] rounded-xl"
+                  className="w-[80px] h-[80px] rounded-xl"
                 />
                 <div className="w-2/3">
                   <p className="font-bold text-sm">
@@ -159,7 +159,7 @@ export default function ArticlePage() {
                 <img
                   alt={"test pic3"}
                   src={"https://iili.io/JuBODqN.png"}
-                  className="w-1/3 min-h-[84px] rounded-xl"
+                  className="w-[80px] h-[80px] rounded-xl"
                 />
                 <div className="w-2/3">
                   <p className="font-bold text-sm">

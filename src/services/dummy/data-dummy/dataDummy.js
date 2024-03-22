@@ -376,50 +376,56 @@ export const dummyItemBuy2 = {
   children: [
     {
       name: "Packages",
-      image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+      image: "/assets/symbols/diamond.svg",
       viewStyle: "list",
       children: [
         {
           name: "Weekly Diamond Pass",
-          image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+          image: "/assets/symbols/diamond.svg",
+          price: 30000
         },
         {
           name: "Twilight Pass",
-          image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+          image: "/assets/symbols/diamond.svg",
+          price: 150000
         },
       ]
     },
     {
       name: "Top Up Diamonds",
-      image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+      image: "/assets/symbols/diamond.svg",
       viewStyle: "grid",
       children: [
         {
           category: "Popular",
           children: [
             {
-              name: "10 Diamonds",
-              image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+              name: "5 Diamonds",
+              image: "/assets/symbols/diamond.svg",
               discount: 6,
-              isPopular: true
+              isPopular: true,
+              price: 1350
             },
             {
-              name: "11 Diamonds",
-              image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+              name: "44 Diamonds",
+              image: "/assets/symbols/diamond.svg",
               discount: 5,
-              isPopular: false
+              isPopular: false,
+              price: 11200
             },
             {
-              name: "12 Diamonds",
-              image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+              name: "170 Diamonds",
+              image: "/assets/symbols/diamond.svg",
               discount: 5,
-              isPopular: true
+              isPopular: true,
+              price: 43200
             },
             {
-              name: "13 Diamonds",
-              image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+              name: "296 Diamonds",
+              image: "/assets/symbols/diamond.svg",
               discount: 5,
-              isPopular: true
+              isPopular: true,
+              price: 75000
             },
           ]
         },
@@ -427,28 +433,32 @@ export const dummyItemBuy2 = {
           category: "More Diamonds",
           children: [
             {
-              name: "14 Diamonds",
-              image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+              name: "3 Diamonds",
+              image: "/assets/symbols/diamond.svg",
               discount: 10,
-              isPopular: false
+              isPopular: false,
+              price: 1100
             },
             {
-              name: "15 Diamonds",
-              image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+              name: "19 Diamonds",
+              image: "/assets/symbols/diamond.svg",
               discount: 5,
-              isPopular: true
+              isPopular: true,
+              price: 5100
             },
             {
-              name: "10 Diamonds",
-              image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+              name: "59 Diamonds",
+              image: "/assets/symbols/diamond.svg",
               discount: 5,
-              isPopular: true
+              isPopular: true,
+              price: 14900
             },
             {
-              name: "10 Diamonds",
-              image: "https://pbs.twimg.com/profile_images/966253495547342848/_bjmYta5_400x400.jpg",
+              name: "568 Diamonds",
+              image: "/assets/symbols/diamond.svg",
               discount: 5,
-              isPopular: false
+              isPopular: false,
+              price: 141700
             },
           ]
         }
