@@ -1,6 +1,9 @@
 import axios from "axios";
 import { urlLogin, urlRegister } from "../api-config/endpointUrl";
-import { alertError, alertWarning } from "../../custom-alert/customGeneralAlert";
+import {
+  alertError,
+  alertWarning,
+} from "../../custom-alert/customGeneralAlert";
 
 //usage example:
 // const handleSubmit = async (e) => {
@@ -28,20 +31,25 @@ export async function hitLogin({ email, password }) {
 
   const res = await axios.post(urlLogin, reqBody).catch((e) => {
     alertError(e);
-    console.log('error login service', e);
+    console.log("error login service", e);
   });
 
   if (res && res.data.status === 200) {
     localStorage.setItem("authToken", res.data.data.authToken);
     localStorage.setItem("refreshToken", res.data.data.refreshToken);
-    localStorage.setItem("recentViewed", [])
+    localStorage.setItem("recentViewed", []);
   }
 
   return res;
-
 }
 
-export async function hitRegister({ name, email, phone_number, password, rePassword }) {
+export async function hitRegister({
+  name,
+  email,
+  phone_number,
+  password,
+  rePassword,
+}) {
   if (name.length < 1) {
     alertWarning("nama wajib diisi");
     return;
@@ -75,7 +83,6 @@ export async function hitRegister({ name, email, phone_number, password, rePassw
   });
   console.log("res: ", res);
   return res;
-
 }
 
 export async function hitLogout() {
